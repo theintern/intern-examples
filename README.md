@@ -9,7 +9,7 @@ Every example has a README that will guide you through the process of setting it
 ### Backbone Application
 
 See `backbone-example` folder. This example showcases functional tests that work
-locally and remotely sauce labs.
+locally and remotely with Sauce Labs.
 Based on the [TodoMVC Backbone Example](http://todomvc.com/architecture-examples/backbone/).
 
 ----
