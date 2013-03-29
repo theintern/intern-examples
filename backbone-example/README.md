@@ -11,7 +11,7 @@ backbone-example
 
 ### Setup Intern
 
-	* `git clone --recursive https://github.com/csnover/dojo2-teststack.git` OR [ TODO: `npm install ...` ]
+	* `git clone --recursive git@github.com:theintern/intern.git` OR [ TODO: `npm install ...` ]
 	* `npm install` inside Intern
 
 ### Running
@@ -22,4 +22,4 @@ backbone-example
 	* [TODO: Setup Steps here]
 * Run functional test suites **locally**:
 	* Prepare Selenium (i.e. `java-jar selenium-server.jar`)
-	* From project root run: `node dojo2-teststack/runner.js config=test/teststack.js`
+	* From project root run: `node intern/runner.js config=test/intern.js`
