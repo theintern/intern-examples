@@ -1,21 +1,25 @@
-Example App
-=============
+# Intern-examples
 
-## Project Info
+This repository is a collection of examples of using [Intern](https://github.com/theintern/intern) in web applications.
+Use these examples as your guide to integrate [Intern](https://github.com/theintern/intern) into your projects!
+Every example has a README that will guide you through the process of setting it up.
 
-...
+## Examples
 
-## Setup
+### Backbone Application
 
-* Using bower in the `app` directory, run `bower install`
-* Serve the `app` folder
+See `backbone-example` folder. This example showcases functional tests that work
+locally and remotely sauce labs.
+Based on the [TodoMVC Backbone Example](http://todomvc.com/architecture-examples/backbone/).
 
-## Running Tests
+----
 
-* `git clone --recursive https://github.com/csnover/dojo2-teststack.git` OR [ TODO: `npm install ...` ]
-* Run functional test suites via **Sauce Labs**:
- * [TODO: Setup Steps here]
-* Run functional test suites **locally**:
- * Prepare Selenium (i.e. `java-jar selenium-server.jar`)
-* Make sure the app is available at `localhost:8000`
-* From project root run: `node dojo2-teststack/runner.js config=test/teststack.js`
+### Using Intern with `grunt-intern`
+
+See `grunt-example` folder.
+
+----
+
+## External Examples
+
+* [Intern self-testing example](https://github.com/theintern/intern/tree/master/test)

@@ -1,3 +1,0 @@
-define([
-  './lib/Suite'
-], function () {});
