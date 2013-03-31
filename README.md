@@ -23,3 +23,4 @@ See `grunt-example` folder.
 ## External Examples
 
 * [Intern self-testing example](https://github.com/theintern/intern/tree/master/test)
+* [Functional test demo from dojo2-core](https://github.com/csnover/dojo2-core/tree/master/test/functional)
