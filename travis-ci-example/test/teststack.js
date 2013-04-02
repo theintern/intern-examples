@@ -8,19 +8,18 @@ define({
 	},
 
 	environments: [
-		{ browserName: 'firefox' },
-		{ browserName: 'chrome' }
+		{ browserName: 'firefox', version: '19', platform: [ 'Linux', 'Mac 10.6', 'Windows 2012' ]  }
 	],
 
 	maxConcurrency: 3,
-	useSauceConnect: false,
+	useSauceConnect: true,
 
 	// Connection information for the remote WebDriver service. If using Sauce Labs, keep your username and password
 	// in the SAUCE_USERNAME and SAUCE_ACCESS_KEY environment variables unless you are sure you will NEVER be
 	// publishing this configuration file somewhere
 	webdriver: {
 		host: 'localhost',
-		port: 4444
+		port: 4445
 	},
 
 	// Configuration options for the module loader; any AMD configuration options supported by the Dojo loader can be
@@ -30,6 +29,8 @@ define({
 		packages: [ 'dojo2-teststack' ],
 		map: { 'dojo2-teststack': { 'dojo-ts': 'dojo2-teststack/dojo' } }
 	},
+
+	functionalSuites: [ ],
 
 	// Non-functional test suite(s) to run in each browser
 	suites: [ 'test/tests/demo' ],
