@@ -6,7 +6,7 @@ define([
 	with (tdd) {
 		suite('exampleSetApp', function () {
 
-			// TODO BUG: cannot use 'before, beforeEach', Chrome will report that tests passed
+			// TODO BUG: cannot use 'before, beforeEach', only Firefox will report that tests failed
 			test('#getSize', function () {
 				var eSet = new MiniSet();
 				assert.equal(eSet.getSize(), 0);
