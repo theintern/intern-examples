@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>grunt-intern-example</title>
+</head>
+<body>
+<h1>MiniSet App</h1>
+
+<div id="main"></div>
+
+<script src="MiniSet.js"></script>
+
+<script>
+	try {
+		var msg,
+			aSet = new MiniSet();
+
+		aSet.add(1);
+		aSet.add(2);
+		aSet.add(3);
+
+		msg = "MiniSet Size: " + aSet.getSize();
+	} catch (e) {
+		msg = "Could not make a MiniSet!";
+	}
+
+	document.getElementById('main').innerHTML = msg;
+
+</script>
+</body>
+</html>

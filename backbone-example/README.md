@@ -11,9 +11,11 @@ backbone-example
 
 ### Setup Intern
 
-`git clone --recursive git@github.com:theintern/intern.git` OR [ TODO: `npm install ...` ] into `backbone-example`.
+`git clone --recursive git@github.com:theintern/intern.git` into `backbone-example`.
+(This will be replaced by npm).
 
 Run `npm install` inside the Intern folder to setup node modules.
+
 
 ### Running
 
@@ -22,5 +24,5 @@ Run `npm install` inside the Intern folder to setup node modules.
 * Run functional test suites via **Sauce Labs**:
 	* [TODO: Setup Steps here]
 * Run functional test suites **locally**:
-	* Prepare Selenium (i.e. `java-jar selenium-server.jar`)
+	* Prepare Selenium (i.e. `java -jar selenium-server.jar`)
 	* From project root run: `node intern/runner.js config=test/intern.js`
