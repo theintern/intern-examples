@@ -22,6 +22,25 @@ See `grunt-example` folder for an example of how to use it or read the [plugin d
 
 ----
 
+### Using Intern with [Travis CI](https://travis-ci.org/)
+
+See `travis-ci-example` folder and the `.travis.yml` in the root of this repository.
+
+Running examples:
+* [https://travis-ci.org/vladikoff/intern-examples](https://travis-ci.org/vladikoff/intern-examples)
+
+----
+
+### Full SauceLabs Example
+
+The goal of this example is to test as many browsers on SauceLabs as possible.
+This example might use a lot of your available minutes on SauceLabs and it is not recommended to run it.
+
+See `travis-ci-example/test/teststack_full.js`.
+
+----
+
+
 ## External Examples
 
 * [Intern self-testing example](https://github.com/theintern/intern/tree/master/test)

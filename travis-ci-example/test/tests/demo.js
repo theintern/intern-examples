@@ -6,7 +6,7 @@ define([
 	with (tdd) {
 		suite('demo', function () {
 			test('#example', function () {
-				// var app is loaded from '../../app/App'
+				// app comes from '../../app/App'
 				assert.equal(app.version, 1);
 			});
 		});
