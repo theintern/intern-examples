@@ -6,15 +6,23 @@ define([
 	with (tdd) {
 		suite('exampleSetApp', function () {
 
-			// TODO BUG: cannot use 'before, beforeEach', only Firefox will report that tests failed
 			test('#getSize', function () {
-				var eSet = new MiniSet();
-				assert.equal(eSet.getSize(), 0);
+				var bSet = new MiniSet();
+				assert.equal(bSet.getSize(), 0);
 			});
 
 			test('#getSizewithItems', function () {
-				var eSet = new MiniSet([1,2,3]);
+				var eSet = new MiniSet([1, 2, 3]);
 				assert.equal(eSet.getSize(), 3);
+			});
+
+			test('#addItems', function () {
+				var aSet = new MiniSet();
+				aSet.add(3);
+				aSet.add("text");
+				assert.equal(aSet.has(3), true);
+				assert.equal(aSet.has("text"), true);
+				assert.equal(aSet.has(5), false);
 			});
 		});
 	}
