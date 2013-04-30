@@ -10,9 +10,9 @@ env:
 install:
   - git clone https://github.com/vladikoff/intern-examples
   - cd travis-ci-example
-  - git clone --recursive https://github.com/csnover/dojo2-teststack.git
-  - cd dojo2-teststack
+  - git clone --recursive https://github.com/theintern/intern.git
+  - cd intern
   - git submodule update --init --recursive
   - npm install --production
   - cd ..
-script: node dojo2-teststack/runner.js config=test/teststack
+script: node intern/runner.js config=test/teststack

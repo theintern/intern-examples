@@ -40,16 +40,15 @@ define({
 	// used here
 	loader: {
 		// Packages that should be registered with the loader in each testing environment
-		packages: [ 'dojo2-teststack' ],
-		map: { 'dojo2-teststack': { 'dojo-ts': 'dojo2-teststack/dojo' } }
+		packages: [ 'backbone-example' ]
 	},
 
 	// Non-functional test suite(s) to run in each browser
 	suites: [ ],
 
 	// Functional test suite(s) to run in each browser once non-functional tests are completed
-	functionalSuites: [ 'test/all' ],
+	functionalSuites: [ 'tests/all' ],
 
 	// A regular expression matching URLs to files that should not be included in code coverage analysis
-	excludeInstrumentation: /^dojo2-teststack\/dojo\//
+	excludeInstrumentation: /^backbone-example\/(?:tests\/)/
 });

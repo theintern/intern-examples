@@ -1,3 +1,3 @@
 define([
-	'./tests/functional'
+	'./lib/functional'
 ], function () {});

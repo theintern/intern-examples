@@ -1,6 +1,6 @@
 define([
-	'teststack!object',
-	'teststack/chai!assert',
+	'intern!object',
+	'intern/chai!assert',
 	'require'
 ], function (registerSuite, assert, require) {
 	var request, url = 'http://localhost:8000/';

@@ -25,4 +25,4 @@ Run `npm install` inside the Intern folder to setup node modules.
 	* [TODO: Setup Steps here]
 * Run functional test suites **locally**:
 	* Prepare Selenium (i.e. `java -jar selenium-server.jar`)
-	* From project root run: `node intern/runner.js config=test/intern.js`
+	* From project root run: `node intern/runner.js config=tests/intern_local.js`
