@@ -4,7 +4,6 @@
 	"version": "0.1.0",
 	"private": true,
 	"devDependencies": {
-		"grunt": "~0.4.1",
-		"grunt-dojo2-teststack": "https://github.com/csnover/grunt-dojo2-teststack/tarball/master"
+		"grunt": "~0.4.1"
 	}
 }

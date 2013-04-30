@@ -32,11 +32,11 @@ define({
 	},
 
 	// Non-functional test suite(s) to run in each browser
-	suites: [ 'test/tests/demo' ],
+	suites: [ 'tests/lib/demo' ],
 
 	// Functional test suite(s) to run in each browser once non-functional tests are completed
 	functionalSuites: [],
 
 	// A regular expression matching URLs to files that should not be included in code coverage analysis
-	excludeInstrumentation: /^dojo2-teststack\/dojo\//
+	excludeInstrumentation: /^/
 });

@@ -1,6 +1,6 @@
 define([
-	'teststack!tdd',
-	'teststack/chai!assert',
+	'intern!tdd',
+	'intern/chai!assert',
 	'../../app/MiniSet'
 ], function (tdd, assert) {
 	with (tdd) {

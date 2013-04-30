@@ -1,22 +1,20 @@
 module.exports = function (grunt) {
 
 	grunt.initConfig({
-		teststack: {
+		intern: {
 			local: {
 				options: {
-					teststackDir: './dojo2-teststack',
-					config: 'test/teststack.js'
+					teststackDir: './intern',
+					config: 'tests/intern.js'
 				}
 			}
 		}
 	});
 
-	// These plugins provide necessary tasks.
-	// TODO: grunt.loadNpmTasks('grunt-intern');
-	grunt.loadNpmTasks('grunt-teststack');
+	grunt.loadTasks('./intern/grunt');
 
 	// Register a test task
-	grunt.registerTask('test', ['teststack']);
+	grunt.registerTask('test', ['intern']);
 
 	// By default we just test
 	grunt.registerTask('default', ['test']);
