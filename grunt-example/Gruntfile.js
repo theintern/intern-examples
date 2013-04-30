@@ -7,7 +7,7 @@ module.exports = function (grunt) {
 	            options: {
 	                config: 'tests/intern.js'
 	                // for other available options, see:
-	                // https://github.com/theintern/intern/wiki/Running-Tests
+	                // https://github.com/theintern/intern/wiki/Using-Intern-with-Grunt#task-options
 	            }
 	        }
 	    }
