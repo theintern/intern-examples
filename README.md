@@ -23,7 +23,7 @@ See `grunt-example` folder for an example of how to use it or read the [plugin d
 ----
 
 ### Using Intern with [Travis CI](https://travis-ci.org/)
-
+![](https://api.travis-ci.org/vladikoff/intern-examples.png)
 See `travis-ci-example` folder and the `.travis.yml` in the root of this repository.
 
 Running examples:
