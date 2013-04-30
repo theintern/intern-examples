@@ -52,15 +52,14 @@ define({
 	// used here
 	loader: {
 		// Packages that should be registered with the loader in each testing environment
-		packages: [ 'dojo2-teststack' ],
-		map: { 'dojo2-teststack': { 'dojo-ts': 'dojo2-teststack/dojo' } }
+		packages: [ 'travis-ci-example' ]
 	},
 
 	functionalSuites: [ ],
 
 	// Non-functional test suite(s) to run in each browser
-	suites: [ 'test/tests/demo' ],
+	suites: [ 'test/lib/demo' ],
 
 	// A regular expression matching URLs to files that should not be included in code coverage analysis
-	excludeInstrumentation: /^dojo2-teststack\/dojo\//
+	excludeInstrumentation: /^travis-ci-example\/tests\//
 });

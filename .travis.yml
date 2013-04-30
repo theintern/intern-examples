@@ -15,4 +15,4 @@ install:
   - git submodule update --init --recursive
   - npm install --production
   - cd ..
-script: node intern/runner.js config=test/teststack
+script: node intern/runner.js config=tests/intern

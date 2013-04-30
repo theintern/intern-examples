@@ -9,4 +9,4 @@ with [Travis CI](https://travis-ci.org/)
 * Adjust `.travis.yml`
 * Make a commit
 
-You can find more information on [continuous integration with Intern](https://github.com/theintern/intern/wiki/Continuous-Integration) in the wiki.
+You can find more information on [continuous integration with Intern](https://github.com/theintern/intern/wiki/Travis-CI-integration) in the wiki.
