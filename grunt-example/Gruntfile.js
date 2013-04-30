@@ -1,4 +1,5 @@
 module.exports = function (grunt) {
+
 	grunt.initConfig({
 		intern: {
 	        dev: {
@@ -13,8 +14,8 @@ module.exports = function (grunt) {
 	});
 
 	// We are loading the intern task from the intern/grunt dir because
-	// at this time, neither intern nor is not distributed via npm. 
-	// This should change in the future.
+	// at this time, intern is not distribued via npm. This should change
+	// in the future.
 	grunt.loadTasks('intern/grunt');
 
 	// Register a test task
