@@ -27,8 +27,8 @@ define({
 	// used here
 	loader: {
 		// Packages that should be registered with the loader in each testing environment
-		packages: [ 'dojo2-teststack' ],
-		map: { 'dojo2-teststack': { 'dojo-ts': 'dojo2-teststack/dojo' } }
+		packages: [ 'intern' ],
+		map: { 'intern': { dojo: 'intern/dojo' } }
 	},
 
 	// Non-functional test suite(s) to run in each browser
