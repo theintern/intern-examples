@@ -2,15 +2,14 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 		intern: {
-	        dev: {
-	            runType: 'client',
-	            options: {
-	                config: 'tests/intern.js'
-	                // for other available options, see:
-	                // https://github.com/theintern/intern/wiki/Using-Intern-with-Grunt#task-options
-	            }
-	        }
-	    }
+			dev: {
+				options: {
+					// for other available options, see:
+					// https://github.com/theintern/intern/wiki/Using-Intern-with-Grunt#task-options
+					config: 'tests/intern'
+				}
+			}
+		}
 	});
 
 	// We are loading the intern task from the intern/grunt dir because
