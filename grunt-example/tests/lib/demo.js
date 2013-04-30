@@ -1,7 +1,7 @@
 define([
 	'intern!tdd',
 	'intern/chai!assert',
-	'../../app/MiniSet'
+	'app/MiniSet'
 ], function (tdd, assert) {
 	with (tdd) {
 		suite('exampleSetApp', function () {
