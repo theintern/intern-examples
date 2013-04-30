@@ -24,6 +24,7 @@ See `grunt-example` folder for an example of how to use it or read the [plugin d
 
 ### Using Intern with [Travis CI](https://travis-ci.org/)
 ![](https://api.travis-ci.org/vladikoff/intern-examples.png)
+
 See `travis-ci-example` folder and the `.travis.yml` in the root of this repository.
 
 Running examples:
@@ -43,17 +44,18 @@ See `travis-ci-example/test/teststack_full.js`.
 
 ## External Examples
 
-* [Intern self-testing example](https://github.com/theintern/intern/tree/master/test)
+* [Intern example configuration](https://github.com/theintern/intern/blob/master/tests/example.intern.js)
+* [Intern self-testing example](https://github.com/theintern/intern/blob/master/tests/selftest.intern.js)
 * [Functional test demo from dojo2-core](https://github.com/csnover/dojo2-core/tree/master/test/functional)
 
 ## Examples from the Wiki
 
-* [BDD](https://github.com/theintern/intern/wiki/BDD-Interface#example-bdd-test)
-* [TDD](https://github.com/theintern/intern/wiki/TDD-Interface#example-tdd-test)
-* [Object](https://github.com/theintern/intern/wiki/Object-Interface#example-object-test)
-* [Functional](https://github.com/theintern/intern/wiki/Functional-Testing#example-functional-test)
+* [BDD](https://github.com/theintern/intern/wiki/Writing-Tests#bdd)
+* [TDD](https://github.com/theintern/intern/wiki/Writing-Tests#tdd)
+* [Object](https://github.com/theintern/intern/wiki/Writing-Tests#object)
+* [Functional](https://github.com/theintern/intern/wiki/Writing-Tests#functional)
 
 ## Other Resources
 
-[Intern Wiki](https://github.com/theintern/intern/wiki)
+[Intern Wiki](https://github.com/theintern/intern/wiki) ::
 [Intern Website](http://theintern.io/)
