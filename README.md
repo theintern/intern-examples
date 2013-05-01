@@ -14,10 +14,10 @@ Based on the [TodoMVC Backbone Example](http://todomvc.com/architecture-examples
 
 ----
 
-### Using Intern with `grunt-intern`
+### Using Intern with Grunt
 
 Grunt support is built into Intern, all you have to do is include the task in your Gruntfile using
-`grunt.loadTasks('intern/grunt');`.
+`grunt.loadTasks('intern/grunt')`.
 
 See `grunt-example` folder for an example of how to use it or read the [task documentation](https://github.com/theintern/intern/wiki/Using-Intern-with-Grunt).
 
