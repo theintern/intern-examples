@@ -16,9 +16,10 @@ Based on the [TodoMVC Backbone Example](http://todomvc.com/architecture-examples
 
 ### Using Intern with `grunt-intern`
 
-[grunt-intern](https://npmjs.org/package/grunt-intern) is a Grunt plugin that helps
-you integrate [Intern](https://github.com/theintern/intern) into your `Gruntfile`.
-See `grunt-example` folder for an example of how to use it or read the [plugin documentation](https://npmjs.org/package/grunt-intern).
+Grunt support is built into Intern, all you have to do is include the task in your Gruntfile using
+`grunt.loadTasks('intern/grunt');`.
+
+See `grunt-example` folder for an example of how to use it or read the [task documentation](https://github.com/theintern/intern/wiki/Using-Intern-with-Grunt).
 
 ----
 
