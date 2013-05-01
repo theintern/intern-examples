@@ -2,10 +2,15 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 		intern: {
-			dev: {
+			client: {
 				options: {
 					// for other available options, see:
 					// https://github.com/theintern/intern/wiki/Using-Intern-with-Grunt#task-options
+					config: 'tests/intern'
+				}
+			},
+			runner: {
+				options: {
 					config: 'tests/intern',
 					runType: 'runner'
 				}
