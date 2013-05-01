@@ -9,6 +9,13 @@ module.exports = function (grunt) {
 					config: 'tests/intern'
 				}
 			},
+			clientSuiteGet: {
+				// an example of specifying a suite name
+				options: {
+					config: 'tests/intern',
+					suites: ['tests/lib/get']
+				}
+			},
 			runner: {
 				options: {
 					config: 'tests/intern',
@@ -24,7 +31,7 @@ module.exports = function (grunt) {
 	grunt.loadTasks('intern/grunt');
 
 	// Register a test task
-	grunt.registerTask('test', ['intern']);
+	grunt.registerTask('test', ['intern:client']);
 
 	// By default we just test
 	grunt.registerTask('default', ['test']);

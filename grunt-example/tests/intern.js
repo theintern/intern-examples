@@ -28,7 +28,7 @@ define({
 	loader: { },
 
 	// Non-functional test suite(s) to run in each browser
-	suites: [ 'tests/lib/demo' ],
+	suites: [ 'tests/lib/add', 'tests/lib/get' ],
 
 	// Functional test suite(s) to run in each browser once non-functional tests are completed
 	functionalSuites: [],

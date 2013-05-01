@@ -4,7 +4,6 @@ grunt-example
 ## Running Tests
 
 * Make sure you have Intern and Grunt setup
-* Setup [grunt-intern](https://npmjs.org/package/grunt-intern). Also see `package.json` for this example
 * This example uses local environments:
 ```
 	environments: [
@@ -15,3 +14,10 @@ grunt-example
 so make sure you have [Selenium Server](http://docs.seleniumhq.org/download/) running and
 [chromedriver](https://code.google.com/p/chromedriver/downloads/list) is in your PATH
 * Run `grunt test`
+
+Check the [Gruntfile](Gruntfile.js) for details.
+If you haven't used Grunt before, here are some commands that are also available using the Gruntfile in this example:
+* `grunt` - runs the default task in the Gruntfile, which is `test` in this case.
+* `grunt intern:client` will run intern with the default `runType: 'client'`
+* `grunt intern:clientSuiteGet` will run the `get` suite.
+* `grunt intern:runner` will run the `runner` subtask that has `runType: runner`
