@@ -60,3 +60,9 @@ See `travis-ci-example/test/teststack_full.js`.
 
 [Intern Wiki](https://github.com/theintern/intern/wiki) ::
 [Intern Website](http://theintern.io/)
+
+## Got Examples?
+
+If you have examples of using Intern in your projects, please file an issue and we will try to add it to this list.
+
+
