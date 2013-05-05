@@ -11,11 +11,7 @@ backbone-example
 
 ### Setup Intern
 
-`git clone --recursive git@github.com:theintern/intern.git` into `backbone-example`.
-(This will be replaced by npm).
-
-Run `npm install` inside the Intern folder to setup node modules.
-
+Follow the steps in the [quick start guide](https://github.com/theintern/intern#quick-start).
 
 ### Running
 
