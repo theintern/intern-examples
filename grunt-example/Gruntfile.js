@@ -26,9 +26,12 @@ module.exports = function (grunt) {
 	});
 
 	// We are loading the intern task from the intern/grunt dir because
-	// at this time, intern is not distribued via npm. This should change
-	// in the future.
-	grunt.loadTasks('intern/grunt');
+	// at this time, intern is not distributed via npm. This should change
+	// in the future to
+	//grunt.loadNpmTasks('intern');
+
+	// Loading using a local git copy
+	grunt.loadTasks('intern/tasks');
 
 	// Register a test task
 	grunt.registerTask('test', ['intern:client']);
