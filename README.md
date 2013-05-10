@@ -1,4 +1,4 @@
-# Intern-examples
+# intern-examples
 
 This repository is a collection of examples of using [Intern](https://github.com/theintern/intern) in web applications.
 Use these examples as your guide to integrate [Intern](https://github.com/theintern/intern) into your projects!
