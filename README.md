@@ -55,6 +55,7 @@ See `travis-ci-example/test/teststack_full.js`.
 * [TDD](https://github.com/theintern/intern/wiki/Writing-Tests#tdd)
 * [Object](https://github.com/theintern/intern/wiki/Writing-Tests#object)
 * [Functional](https://github.com/theintern/intern/wiki/Writing-Tests#functional)
+* [Using Reporters(https://github.com/theintern/intern/wiki/Using-Reporters)
 
 ## Other Resources
 
