@@ -49,13 +49,13 @@ See `travis-ci-example/test/teststack_full.js`.
 * [Intern self-testing example](https://github.com/theintern/intern/blob/master/tests/selftest.intern.js)
 * [Functional test demo from dojo2-core](https://github.com/csnover/dojo2-core/tree/master/test/functional)
 
-## Examples from the Wiki
+## From the Wiki
 
 * [BDD](https://github.com/theintern/intern/wiki/Writing-Tests#bdd)
 * [TDD](https://github.com/theintern/intern/wiki/Writing-Tests#tdd)
 * [Object](https://github.com/theintern/intern/wiki/Writing-Tests#object)
 * [Functional](https://github.com/theintern/intern/wiki/Writing-Tests#functional)
-* [Using Reporters(https://github.com/theintern/intern/wiki/Using-Reporters)
+* [Using Reporters](https://github.com/theintern/intern/wiki/Using-Reporters)
 
 ## Other Resources
 
