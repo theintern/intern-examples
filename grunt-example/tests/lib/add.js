@@ -1,12 +1,12 @@
 define([
 	'intern!tdd',
 	'intern/chai!assert',
-	'app/MiniSet'
+	'app/Block'
 ], function (tdd, assert) {
 	with (tdd) {
 		suite('add', function () {
 			test('#addItems', function () {
-				var aSet = new MiniSet();
+				var aSet = new Block();
 				aSet.add(3);
 				aSet.add("text");
 				assert.equal(aSet.has(3), true);

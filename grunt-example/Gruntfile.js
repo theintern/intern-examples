@@ -31,7 +31,7 @@ module.exports = function (grunt) {
 	//grunt.loadNpmTasks('intern');
 
 	// Loading using a local git copy
-	grunt.loadTasks('intern/tasks');
+	grunt.loadNpmTasks('intern');
 
 	// Register a test task
 	grunt.registerTask('test', ['intern:client']);
