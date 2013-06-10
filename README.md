@@ -65,5 +65,3 @@ See `travis-ci-example/test/teststack_full.js`.
 ## Got Examples?
 
 If you have examples of using Intern in your projects, please file an issue and we will try to add it to this list.
-
-
