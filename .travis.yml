@@ -10,9 +10,5 @@ env:
 install:
   - git clone https://github.com/vladikoff/intern-examples
   - cd travis-ci-example
-  - git clone --recursive https://github.com/theintern/intern.git
-  - cd intern
-  - git submodule update --init --recursive
-  - npm install --production
-  - cd ..
-script: node intern/runner.js config=tests/intern
+  - npm install intern
+script: node node_modules/intern/runner.js config=tests/intern
