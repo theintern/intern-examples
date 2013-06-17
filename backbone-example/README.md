@@ -9,7 +9,7 @@ backbone-example
 
 ## Running Tests
 
-### Setup Intern
+### Setup Intern using NPM
 
 Follow the steps in the [quick start guide](https://github.com/theintern/intern#quick-start).
 
@@ -21,4 +21,4 @@ Follow the steps in the [quick start guide](https://github.com/theintern/intern#
 	* [TODO: Setup Steps here]
 * Run functional test suites **locally**:
 	* Prepare Selenium (i.e. `java -jar selenium-server.jar`)
-	* From project root run: `node intern/runner.js config=tests/intern_local.js`
+	* From project root run: `node node_modules/intern/runner.js config=tests/intern_local.js`
