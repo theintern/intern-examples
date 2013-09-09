@@ -1,5 +1,5 @@
+/*jshint node:true */
 module.exports = function (grunt) {
-
 	grunt.initConfig({
 		intern: {
 			client: {
@@ -24,11 +24,6 @@ module.exports = function (grunt) {
 			}
 		}
 	});
-
-	// We are loading the intern task from the intern/grunt dir because
-	// at this time, intern is not distributed via npm. This should change
-	// in the future to
-	//grunt.loadNpmTasks('intern');
 
 	// Loading using a local git copy
 	grunt.loadNpmTasks('intern');
