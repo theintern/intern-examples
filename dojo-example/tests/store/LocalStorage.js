@@ -30,7 +30,7 @@ define([
 			assert.strictEqual(store.getIdentity(item), 3);
 		},
 
-		'put': function () {
+		put: function () {
 			var four = store.get(4);
 			four.square = true;
 			store.put(four);
@@ -38,12 +38,18 @@ define([
 			assert.isTrue(four.square);
 		},
 
-		'add': function () {
+		add: function () {
 			store.put({
 				id: 6,
 				perfect: true
 			});
 			assert.isTrue(store.get(6).perfect);
+		},
+
+		query: function () {
+			var results = store.query({prime: true});
+			assert.strictEqual(results.length, 3);
+			assert.strictEqual(results[2].name, 'five');
 		}
 	});
 });

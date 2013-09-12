@@ -51,6 +51,7 @@ define({
 		packages: [
 			{ name: 'todo', location: 'js/todo' },
 			{ name: 'dojo', location: 'js/lib/dojo' },
+			{ name: 'dojox', location: 'js/lib/dojox' },
 			{ name: 'dijit', location: 'js/lib/dijit' }
 		]
 	},
