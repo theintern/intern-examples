@@ -23,6 +23,8 @@ dojo-example
     bower install
     ```
 
+The application should be accessible via `http://somePath/intern-examples/dojo-example` after the url is adjusted to match your local web server.
+
 ## Running tests
 
 * **Local node tests**
@@ -33,7 +35,7 @@ dojo-example
 
 * **Local browser tests**
 
-    Navigate to `http://somePath/intern-examples/dojo-example/node_modules/intern/client.html?config=tests/intern`, making sure to adjust the path for your local web server.
+    Navigate to `http://somePath/intern-examples/dojo-example/node_modules/intern/client.html?config=tests/intern`, making sure to adjust the url to match your local web server.
 
 * **Remote node / browser tests**
 
