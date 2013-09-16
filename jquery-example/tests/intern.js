@@ -23,11 +23,11 @@ define({
 	// capabilities options specified for an environment will be copied as-is
 	environments: [
 		{ browserName: 'internet explorer', version: '10', platform: 'Windows 8' },
-		// { browserName: 'internet explorer', version: '9', platform: 'Windows 7' },
-		// { browserName: 'firefox', version: '23', platform: [ 'Linux', 'Windows 7' ] },
-		// { browserName: 'firefox', version: '21', platform: 'Mac 10.6' },
-		// { browserName: 'chrome', platform: [ 'Linux', 'Mac 10.8', 'Windows 7' ] },
-		// { browserName: 'safari', version: '6', platform: 'Mac 10.8' }
+		{ browserName: 'internet explorer', version: '9', platform: 'Windows 7' },
+		{ browserName: 'firefox', version: '23', platform: [ 'Linux', 'Windows 7' ] },
+		{ browserName: 'firefox', version: '21', platform: 'Mac 10.6' },
+		{ browserName: 'chrome', platform: [ 'Linux', 'Mac 10.8', 'Windows 7' ] },
+		{ browserName: 'safari', version: '6', platform: 'Mac 10.8' }
 	],
 
 	// Maximum number of simultaneous integration tests that should be executed on the remote WebDriver service
@@ -57,7 +57,7 @@ define({
 	suites: [ 'intern/node_modules/dojo/has!host-browser?tests/utils' ],
 
 	// Functional test suite(s) to run in each browser once non-functional tests are completed
-	functionalSuites: [  ],
+	functionalSuites: [ 'tests/functional/Todo' ],
 
 	// A regular expression matching URLs to files that should not be included in code coverage analysis
 	excludeInstrumentation: /^tests\//
