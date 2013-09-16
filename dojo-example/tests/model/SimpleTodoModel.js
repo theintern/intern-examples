@@ -8,10 +8,10 @@ define([
 
 		'default data': function () {
 			var emptyModel = new SimpleTodoModel();
-			assert.strictEqual(emptyModel.get('id'), 'todos-dojo');
-			assert.strictEqual(emptyModel.get('todos').length, 0);
-			assert.strictEqual(emptyModel.get('incomplete'), 0);
-			assert.strictEqual(emptyModel.get('complete'), 0);
+			assert.strictEqual(emptyModel.get('id'), 'todos-dojo', 'Id should default to "todos-dojo"');
+			assert.strictEqual(emptyModel.get('todos').length, 0, 'Todos array should default to an empty array.');
+			assert.strictEqual(emptyModel.get('incomplete'), 0, 'Incomplete count should default to 0.');
+			assert.strictEqual(emptyModel.get('complete'), 0, 'Incomplete count should default to 0.');
 		},
 
 		'get incomplete (prepopulated model)': function () {
