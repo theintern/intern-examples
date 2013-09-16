@@ -1,0 +1,8 @@
+{
+  "name": "jquery-intern-example",
+  "version": "0.0.1",
+  "description": "An example showing a typical jQuery application tested with Intern",
+  "devDependencies": {
+    "intern": "~1.2.1"
+  }
+}

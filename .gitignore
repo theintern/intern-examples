@@ -1,3 +1,4 @@
 sauce_connect.log*
 node_modules
 components
+jquery-example/bower_components
