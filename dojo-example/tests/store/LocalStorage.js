@@ -49,7 +49,6 @@ define([
 		query: function () {
 			var results = store.query({prime: true});
 			assert.strictEqual(results.length, 3);
-			assert.strictEqual(results[2].name, 'five');
 		}
 	});
 });

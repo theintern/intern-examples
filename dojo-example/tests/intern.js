@@ -27,7 +27,7 @@ define({
 		{ browserName: 'firefox', version: '23', platform: [ 'Linux', 'Windows 7' ] },
 		{ browserName: 'firefox', version: '21', platform: 'Mac 10.6' },
 		{ browserName: 'chrome', platform: [ 'Linux', 'Mac 10.8', 'Windows 7' ] },
-		{ browserName: 'safari', version: '6', platform: 'Mac 10.8' }
+		//{ browserName: 'safari', version: '6', platform: 'Mac 10.8' }
 	],
 
 	// Maximum number of simultaneous integration tests that should be executed on the remote WebDriver service
@@ -60,7 +60,7 @@ define({
 	suites: [ 'tests/all' ],
 
 	// Functional test suite(s) to run in each browser once non-functional tests are completed
-	functionalSuites: [ /* 'myPackage/tests/functional' */ ],
+	functionalSuites: [ 'tests/functional/Todo' ],
 
 	// A regular expression matching URLs to files that should not be included in code coverage analysis
 	excludeInstrumentation: /^tests\//
