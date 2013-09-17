@@ -3,10 +3,10 @@ define([
 	'intern/chai!assert',
 	'require'
 ], function (registerSuite, assert, require) {
-	var request, url = 'http://localhost:8000/';
+	var url = '../../index.html';
 
 	registerSuite({
-		name: 'demo',
+		name: 'Todo (functional)',
 
 		'submit form': function () {
 			return this.remote
@@ -14,14 +14,14 @@ define([
 				.elementById('new-todo')
 				.clickElement()
 				.keys('Task 1')
-				.keys("\n")
+				.keys('\n')
 				.keys('Task 2')
-				.keys("\n")
+				.keys('\n')
 				.keys('Task 3')
 				.getAttribute('value')
 				.then(function (val) {
 					assert.ok(val.indexOf('Task 3') > -1, 'Task 3 should remain in the new todo');
-				})
+				});
 		}
 	});
 });

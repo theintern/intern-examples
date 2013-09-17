@@ -1,8 +1,11 @@
+// Learn more about configuring this file at <https://github.com/theintern/intern/wiki/Configuring-Intern>.
+// These default settings work OK for most people. The options that *must* be changed below are the
+// packages, suites, excludeInstrumentation, and (if you want functional tests) functionalSuites.
 define({
 	// The port on which the instrumenting proxy will listen
 	proxyPort: 9000,
 
-	// A fully qualified URL to the teststack proxy
+	// A fully qualified URL to the Intern proxy
 	proxyUrl: 'http://localhost:9000/',
 
 	// Default desired capabilities for all environments. Individual capabilities can be overridden by any of the
@@ -12,14 +15,19 @@ define({
 	// Note that the `build` capability will be filled in with the current commit ID from the Travis CI environment
 	// automatically
 	capabilities: {
-		'selenium-version': '2.30.0'
+		'selenium-version': '2.35.0'
 	},
 
 	// Browsers to run integration testing against. Note that version numbers must be strings if used with Sauce
 	// OnDemand. Options that will be permutated are browserName, version, platform, and platformVersion; any other
 	// capabilities options specified for an environment will be copied as-is
 	environments: [
-		{ browserName: 'firefox', version: '19', platform: [ 'Linux', 'Mac 10.6', 'Windows 2012' ] }
+		{ browserName: 'internet explorer', version: '10', platform: 'Windows 8' },
+		{ browserName: 'internet explorer', version: '9', platform: 'Windows 7' },
+		{ browserName: 'firefox', version: '23', platform: [ 'Linux', 'Windows 7' ] },
+		{ browserName: 'firefox', version: '21', platform: 'Mac 10.6' },
+		{ browserName: 'chrome', platform: [ 'Linux', 'Mac 10.8', 'Windows 7' ] },
+		{ browserName: 'safari', version: '6', platform: 'Mac 10.8' }
 	],
 
 	// Maximum number of simultaneous integration tests that should be executed on the remote WebDriver service
@@ -33,22 +41,28 @@ define({
 	// publishing this configuration file somewhere
 	webdriver: {
 		host: 'localhost',
-		port: 4445
+		port: 4444
 	},
 
 	// Configuration options for the module loader; any AMD configuration options supported by the Dojo loader can be
 	// used here
 	loader: {
 		// Packages that should be registered with the loader in each testing environment
-		packages: [ 'backbone-example' ]
+		packages: [
+			{ name: 'todo', location: 'js' },
+			{ name: 'jquery', location: 'bower_components/jquery' },
+			{ name: 'underscore', location: 'bower_components/underscore' },
+			{ name: 'backbone', location: 'bower_components/backbone' },
+			{ name: 'backboneStorage', location: 'bower_components/backbone.localStorage' }
+		]
 	},
 
 	// Non-functional test suite(s) to run in each browser
-	suites: [ ],
+	suites: [ 'tests/all' ],
 
 	// Functional test suite(s) to run in each browser once non-functional tests are completed
-	functionalSuites: [ 'tests/all' ],
+	functionalSuites: [ 'tests/functional/Todo' ],
 
 	// A regular expression matching URLs to files that should not be included in code coverage analysis
-	excludeInstrumentation: /^backbone-example\/(?:tests\/)/
+	excludeInstrumentation: /^tests\//
 });
