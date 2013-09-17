@@ -4,5 +4,8 @@
   "description": "An example showing a typical jQuery application tested with Intern",
   "devDependencies": {
     "intern": "~1.2.1"
+  },
+  "scripts": {
+  	"test": "node node_modules/intern/runner.js config=tests/intern"
   }
 }
