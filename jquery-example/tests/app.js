@@ -1,9 +1,9 @@
 define([
     'intern!object',
     'intern/chai!assert',
-    'handlebars/handlebars',
-    'jquery/jquery',
-    'todo/app'
+    'intern/sync!handlebars/handlebars',
+    'intern/sync!jquery/jquery',
+    'intern/sync!todo/app'
 ], function (registerSuite, assert) {
     registerSuite({
         name: 'App',
