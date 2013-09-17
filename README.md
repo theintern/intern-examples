@@ -23,6 +23,12 @@ See `grunt-example` folder for an example of how to use it or read the [task doc
 
 ----
 
+### jQuery Application
+
+See `jquery-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC jQuery Example](http://todomvc.com/architecture-examples/jquery/).
+
+----
+
 ### Using Intern with [Travis CI](https://travis-ci.org/)
 ![](https://api.travis-ci.org/vladikoff/intern-examples.png)
 
