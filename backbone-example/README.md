@@ -1,28 +1,38 @@
 backbone-example
 =============
-
-
 ## Setup
 
-* Using bower in the `app` directory, run `bower install`
-* Serve the `app` folder
+1. The `intern-examples` repository should accessible via a local HTTP server.
 
-## Running Tests
+2. Install node modules
 
-### Setup Intern
+    ```
+    cd backbone-example
+    npm install
+    ```
 
-`git clone --recursive git@github.com:theintern/intern.git` into `backbone-example`.
-(This will be replaced by npm).
+3. Install bower components
 
-Run `npm install` inside the Intern folder to setup node modules.
+    ```
+    bower install
+    ```
 
+The application should be accessible via `http://somePath/intern-examples/backbone-example` after the url is adjusted to match your local web server.
 
-### Running
+## Running tests
 
-* Make sure the app is available at `localhost:8000` by serving the `app` folder using a local server
+* **Local node tests**
 
-* Run functional test suites via **Sauce Labs**:
-	* [TODO: Setup Steps here]
-* Run functional test suites **locally**:
-	* Prepare Selenium (i.e. `java -jar selenium-server.jar`)
-	* From project root run: `node intern/runner.js config=tests/intern_local.js`
+    ```
+    node node_modules/intern/client.js config=tests/intern
+    ```
+
+* **Local browser tests**
+
+    Navigate to `http://somePath/intern-examples/backbone-example/node_modules/intern/client.html?config=tests/intern`, making sure to adjust the url to match your local web server.
+
+* **Remote node / browser tests**
+
+    ```
+    node node_modules/intern/runner.js config=tests/intern
+    ```
