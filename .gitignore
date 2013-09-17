@@ -1,4 +1,5 @@
 sauce_connect.log*
 node_modules
+dojo-example/bower_components
 components
 jquery-example/bower_components
