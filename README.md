@@ -16,18 +16,26 @@ See `backbone-example` folder and the associated README. This example showcases 
 
 See `dojo-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Dojo Example](http://todomvc.com/architecture-examples/dojo/).
 
-### Using Intern with Grunt
+----
 
-Grunt support is built into Intern, all you have to do is include the task in your Gruntfile using
-`grunt.loadTasks('intern/grunt')`.
+### Ember Application
 
-See `grunt-example` folder for an example of how to use it or read the [task documentation](https://github.com/theintern/intern/wiki/Using-Intern-with-Grunt).
+See `ember-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Ember Example](http://todomvc.com/architecture-examples/ember/).
 
 ----
 
 ### jQuery Application
 
 See `jquery-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC jQuery Example](http://todomvc.com/architecture-examples/jquery/).
+
+----
+
+### Using Intern with Grunt
+
+Grunt support is built into Intern, all you have to do is include the task in your Gruntfile using
+`grunt.loadTasks('intern/grunt')`.
+
+See `grunt-example` folder for an example of how to use it or read the [task documentation](https://github.com/theintern/intern/wiki/Using-Intern-with-Grunt).
 
 ----
 
