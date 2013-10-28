@@ -12,16 +12,15 @@ define([
 			checkbox = new CheckBox();
 		},
 
-		'get value': function () { 
+		'get value': function () {
 			checkbox.set('value', 'arbitraryTitle');
 			checkbox.set('checked', true);
 			assert.strictEqual(checkbox.get('value'), true);
 		},
 
 		'set checked': function () {
-			checkbox.set('value', 'arbitraryTitle');
 			checkbox.set('checked', true);
-			assert.strictEqual(checkbox.get('value'), true);
+			assert.strictEqual(checkbox.get('checked'), true);
 		}
 	});
 });
