@@ -1,0 +1,11 @@
+{
+  "name": "angularjs-intern-example",
+  "version": "0.0.1",
+  "description": "An example showing a typical AngularJS application tested with Intern",
+  "devDependencies": {
+    "intern": "~1.2.1"
+  },
+  "scripts": {
+    "test": "node node_modules/intern/runner.js config=tests/intern"
+  }
+}
