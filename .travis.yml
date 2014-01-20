@@ -10,4 +10,5 @@ env:
     - SAUCE_ACCESS_KEY: 89ac3089-17b3-4e9b-aaf3-c475b27fa441
 install:
   - cd travis-ci-example
+  - npm install
 script: npm test
