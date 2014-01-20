@@ -17,12 +17,6 @@ dojo-example
     npm install
     ```
 
-3. Install bower components
-
-    ```
-    bower install
-    ```
-
 The application should be accessible via `http://somePath/intern-examples/dojo-example` after the url is adjusted to match your local web server.
 
 ## Running tests

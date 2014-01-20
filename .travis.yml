@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - "0.8"
+  - "0.10"
 env:
   global:
     # Sauce Labs are OK with this and it is currently necessary to expose this information for testing pull requests;
@@ -8,7 +9,5 @@ env:
     - SAUCE_USERNAME: intern-example-ci
     - SAUCE_ACCESS_KEY: 89ac3089-17b3-4e9b-aaf3-c475b27fa441
 install:
-  - git clone https://github.com/vladikoff/intern-examples
   - cd travis-ci-example
-  - npm install intern
-script: node node_modules/intern/runner.js config=tests/intern
+script: npm test

@@ -11,21 +11,9 @@ ember-example
     npm install
     ```
 
-3. Install bower components
-
-    ```
-    bower install
-    ```
-
 The application should be accessible via `http://somePath/intern-examples/ember-example` after the url is adjusted to match your local web server.
 
 ## Running tests
-
-* **Local node tests**
-
-    ```
-    node node_modules/intern/client.js config=tests/intern
-    ```
 
 * **Local browser tests**
 

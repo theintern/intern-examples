@@ -4,12 +4,11 @@ define({
 	proxyUrl: 'http://localhost:9000/',
 
 	capabilities: {
-		'selenium-version': '2.30.0'
+		'selenium-version': '2.39.0'
 	},
 
 	environments: [
-		{ browserName: 'firefox' },
-		{ browserName: 'chrome' }
+		{ browserName: 'firefox' }
 	],
 
 	maxConcurrency: 3,

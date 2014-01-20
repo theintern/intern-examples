@@ -4,6 +4,8 @@ This repository is a collection of examples of using [Intern](https://github.com
 Use these examples as your guide to integrate [Intern](https://github.com/theintern/intern) into your projects!
 Every example has a README that will guide you through the process of setting it up.
 
+**Note:** Most examples require `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` in your `PATH`. Get Sauce Labs credentials by getting a free or a paid [Sauce Labs account](https://saucelabs.com/signup). If you don't want to sign up with Sauce Labs, then update the test configuration, set `useSauceConnect: false`, set the appropriate Selenium version and don't forget to run the Selenium server.
+
 ## Examples
 
 ### Backbone Application
@@ -64,6 +66,10 @@ See `travis-ci-example/test/teststack_full.js`.
 * [Intern example configuration](https://github.com/theintern/intern/blob/master/tests/example.intern.js)
 * [Intern self-testing example](https://github.com/theintern/intern/blob/master/tests/selftest.intern.js)
 * [Functional test demo from dojo2-core](https://github.com/csnover/dojo2-core/tree/master/test/functional)
+* [Cassowary JS](https://github.com/slightlyoff/cassowary.js/)
+* [Official Intern Tutorial](https://github.com/theintern/intern-tutorial)
+* [Tutorial from ArcGIS](https://github.com/stdavis/intern-tutorial-esri-jsapi)
+* [Firefox Account JS Client testing example](https://github.com/mozilla/fxa-js-client/tree/master/tests)
 
 ## From the Wiki
 

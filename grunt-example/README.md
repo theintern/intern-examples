@@ -1,14 +1,19 @@
 grunt-example
 =============
 
+## Install 
+
+```
+npm install
+```
+
 ## Running Tests
 
 * Make sure you have Intern and Grunt setup
 * This example uses local environments:
 ```
 	environments: [
-		{ browserName: 'firefox' },
-		{ browserName: 'chrome' }
+		{ browserName: 'firefox' }
 	],
 ```
 so make sure you have [Selenium Server](http://docs.seleniumhq.org/download/) running and

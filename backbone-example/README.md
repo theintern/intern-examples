@@ -11,27 +11,23 @@ backbone-example
     npm install
     ```
 
-3. Install bower components
-
-    ```
-    bower install
-    ```
-
-The application should be accessible via `http://somePath/intern-examples/backbone-example` after the url is adjusted to match your local web server.
-
 ## Running tests
 
-* **Local node tests**
+* **Local Selenium Tests** 
+
+    (Setup to run in Firefox)
 
     ```
-    node node_modules/intern/client.js config=tests/intern
+    node_modules/.bin/intern-runner config=tests/intern_local
     ```
 
-* **Local browser tests**
+* **Local Browser Tests**
 
     Navigate to `http://somePath/intern-examples/backbone-example/node_modules/intern/client.html?config=tests/intern`, making sure to adjust the url to match your local web server.
 
-* **Remote node / browser tests**
+* **Remote node / browser tests via Sauce Labs**
+
+    (Requires Sauce Labs credentials)
 
     ```
     node node_modules/intern/runner.js config=tests/intern
