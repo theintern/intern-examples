@@ -35,7 +35,7 @@ See `jquery-example` folder and the associated README. This example showcases bo
 ### Using Intern with Grunt
 
 Grunt support is built into Intern, all you have to do is include the task in your Gruntfile using
-`grunt.loadTasks('intern/grunt')`.
+`grunt.loadNpmTasks('intern');`.
 
 See `grunt-example` folder for an example of how to use it or read the [task documentation](https://github.com/theintern/intern/wiki/Using-Intern-with-Grunt).
 
