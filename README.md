@@ -22,7 +22,7 @@ See `dojo-example` folder and the associated README. This example showcases both
 
 ### Ember Application
 
-See `ember-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Ember Example](http://todomvc.com/architecture-examples/ember/).
+See `ember-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Ember Example](http://todomvc.com/architecture-examples/emberjs/).
 
 ----
 
@@ -69,7 +69,7 @@ See `travis-ci-example/test/teststack_full.js`.
 * [Cassowary JS](https://github.com/slightlyoff/cassowary.js/)
 * [Official Intern Tutorial](https://github.com/theintern/intern-tutorial)
 * [Tutorial from ArcGIS](https://github.com/stdavis/intern-tutorial-esri-jsapi)
-* [Firefox Account JS Client testing example](https://github.com/mozilla/fxa-js-client/tree/master/tests)
+* [Firefox Accounts JS Client testing example](https://github.com/mozilla/fxa-js-client/tree/master/tests)
 
 ## From the Wiki
 
