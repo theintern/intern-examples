@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "An example showing a typical Ember application tested with Intern",
   "devDependencies": {
-    "intern": "1.3.2",
+    "intern": "1.4.0",
     "bower": "~1.2.8"
   },
   "scripts": {
