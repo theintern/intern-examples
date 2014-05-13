@@ -4,15 +4,14 @@ define({
 	proxyUrl: 'http://localhost:9000/',
 
 	capabilities: {
-		'selenium-version': '2.30.0'
+		'selenium-version': '2.39.0'
 	},
 
 	environments: [
-		{ browserName: 'firefox', version: '19', platform: [ 'Linux', 'Mac 10.6', 'Windows 2012' ]  }
 	],
 
 	maxConcurrency: 3,
-	useSauceConnect: true,
+	useSauceConnect: false,
 
 	// Connection information for the remote WebDriver service. If using Sauce Labs, keep your username and password
 	// in the SAUCE_USERNAME and SAUCE_ACCESS_KEY environment variables unless you are sure you will NEVER be
@@ -21,7 +20,7 @@ define({
 		host: 'localhost',
 		port: 4445,
 		SAUCE_USERNAME: 'intern-example-ci',
-		SAUCE_ACCESS_KEY: '89ac3089-17b3-4e9b-aaf3-c475b27fa441'
+		SAUCE_ACCESS_KEY: 'a4eb8d67-ef84-444e-a436-b588abb7faef'
 	},
 
 	// Configuration options for the module loader; any AMD configuration options supported by the Dojo loader can be
@@ -37,5 +36,5 @@ define({
 	suites: [ 'tests/lib/demo' ],
 
 	// A regular expression matching URLs to files that should not be included in code coverage analysis
-	excludeInstrumentation: /^/
+	excludeInstrumentation: /./
 });

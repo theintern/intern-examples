@@ -4,7 +4,11 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "intern": "1.4.2"
+    "grunt": "~0.4.5",
+    "intern": "~1.7.0",
+    "grunt-cli": "~0.1.13"
+  },
+  "scripts": {
+    "test": "grunt intern:client && grunt intern:runner"
   }
 }

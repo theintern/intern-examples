@@ -3,6 +3,7 @@ angularjs-example
 
 ## Install Dependencies
 ```
+npm install -g bower
 npm install
 ```
 
