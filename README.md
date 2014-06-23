@@ -42,7 +42,7 @@ See `grunt-example` folder for an example of how to use it or read the [task doc
 ----
 
 ### Using Intern with [Travis CI](https://travis-ci.org/)
-![](https://api.travis-ci.org/vladikoff/intern-examples.svg?branch=master)
+![](https://api.travis-ci.org/theintern/intern-examples.svg?branch=master)
 
 See `travis-ci-example` folder and the `.travis.yml` in the root of this repository.
 
