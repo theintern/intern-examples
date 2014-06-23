@@ -10,7 +10,9 @@ Every example has a README that will guide you through the process of setting it
 
 ### Backbone Application
 
-See `backbone-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Backbone Example](http://todomvc.com/architecture-examples/backbone/).
+See `backbone-example` folder and the associated README. 
+This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Backbone Example](http://todomvc.com/architecture-examples/backbone/).
+This example will generate an HTML code coverage report in the `html-report` directory.
 
 ----
 

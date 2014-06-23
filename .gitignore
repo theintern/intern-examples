@@ -2,3 +2,4 @@ sauce_connect.log*
 node_modules
 components
 bower_components
+html-report

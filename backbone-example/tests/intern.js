@@ -57,6 +57,8 @@ define({
 		]
 	},
 
+	reporters: [ 'console', 'lcovhtml' ],
+
 	// Non-functional test suite(s) to run in each browser
 	suites: [ 'tests/all' ],
 
@@ -64,5 +66,5 @@ define({
 	functionalSuites: [ 'tests/functional/Todo' ],
 
 	// A regular expression matching URLs to files that should not be included in code coverage analysis
-	excludeInstrumentation: /^tests\//
+	excludeInstrumentation: /^(tests|bower_components|node_modules)\//
 });
