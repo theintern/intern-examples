@@ -5,7 +5,7 @@
   "private": true,
   "devDependencies": {
     "grunt": "~0.4.5",
-    "intern": "~1.7.0",
+    "intern": "~2.0.0",
     "grunt-cli": "~0.1.13"
   },
   "scripts": {

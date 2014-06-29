@@ -11,14 +11,14 @@ define([
 		'submit form': function () {
 			return this.remote
 				.get(require.toUrl(url))
-				.elementById('new-todo')
-				.clickElement()
-				.keys('Task 1')
-				.keys('\n')
-				.keys('Task 2')
-				.keys('\n')
-				.keys('Task 3')
-				.getAttribute('value')
+				.findById('new-todo')
+				.click()
+				.pressKeys('Task 1')
+				.pressKeys('\n')
+				.pressKeys('Task 2')
+				.pressKeys('\n')
+				.pressKeys('Task 3')
+				.getProperty('value')
 				.then(function (val) {
 					assert.ok(val.indexOf('Task 3') > -1, 'Task 3 should remain in the new todo');
 				});

@@ -1,26 +1,32 @@
-ember-example
-=============
-## Setup
+# Ember.js TodoMVC Example
 
-1. The `intern-examples` repository should accessible via a local HTTP server.
+> A framework for creating ambitious web applications.
 
-2. Install node modules
+> _[Ember.js - emberjs.com](http://emberjs.com)_
 
-    ```
-    cd ember-example
-    npm install
-    ```
 
-The application should be accessible via `http://somePath/intern-examples/ember-example` after the url is adjusted to match your local web server.
+## Learning Ember.js
 
-## Running tests
+The [Ember.js website](http://emberjs.com) is a great resource for getting started.
 
-* **Local browser tests**
+Here are some links you may find helpful:
 
-    Navigate to `http://somePath/intern-examples/ember-example/node_modules/intern/client.html?config=tests/intern`, making sure to adjust the url to match your local web server.
+* [Guides](http://emberjs.com/guides)
+* [API Reference](http://emberjs.com/api)
+* [Screencast - Building an App with Ember.js](https://www.youtube.com/watch?v=Ga99hMi7wfY)
+* [Applications built with Ember.js](http://emberjs.com/ember-users)
+* [Blog](http://emberjs.com/blog)
 
-* **Remote node / browser tests**
+Articles and guides from the community:
 
-    ```
-    node node_modules/intern/runner.js config=tests/intern
-    ```
+* [Getting Into Ember.js](http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-js)
+* [EmberWatch](http://emberwatch.com)
+* [CodeSchool course Warming Up With Ember.js](https://www.codeschool.com/courses/warming-up-with-emberjs)
+
+Get help from other Ember.js users:
+
+* [Ember.js on StackOverflow](http://stackoverflow.com/questions/tagged/ember.js)
+* [Ember.js on Twitter](http://twitter.com/emberjs)
+* [Ember.js on Google +](https://plus.google.com/communities/106387049790387471205)
+
+_If you have other helpful links to share, or find any of the links above no longer work, please [let us know](https://github.com/tastejs/todomvc/issues)._

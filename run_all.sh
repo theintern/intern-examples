@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# NOTE: Make sure to have 'java -jar selenium-server-standalone-2.39.0.jar' running for all examples to work.
+# NOTE:
+# Make sure to have 'java -jar selenium-server-standalone-2.39.0.jar'
+# and 'phantomjs --webdriver=4445' running for all examples to work.
 
 export SAUCE_USERNAME=intern-example-ci
 export SAUCE_ACCESS_KEY=a4eb8d67-ef84-444e-a436-b588abb7faef

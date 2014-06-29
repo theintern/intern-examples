@@ -22,27 +22,21 @@ define({
 	// OnDemand. Options that will be permutated are browserName, version, platform, and platformVersion; any other
 	// capabilities options specified for an environment will be copied as-is
 	environments: [
-		{ browserName: 'internet explorer', version: '10', platform: 'Windows 8' },
-		{ browserName: 'internet explorer', version: '9', platform: 'Windows 7' },
-		{ browserName: 'firefox', version: '23', platform: [ 'Linux', 'Windows 7' ] },
-		{ browserName: 'firefox', version: '21', platform: 'Mac 10.6' },
-		{ browserName: 'chrome', platform: [ 'Linux', 'Mac 10.8', 'Windows 7' ] },
-		{ browserName: 'safari', version: '6', platform: 'Mac 10.8' }
+		{ browserName: 'firefox' },
+		/*
+		 // Uncomment to test out the following:
+		 { browserName: 'internet explorer', version: '10', platform: [ 'Windows 7' ] },
+		 { browserName: 'firefox', version: '21', platform: 'Mac 10.6' },
+		 { browserName: 'chrome', platform: [ 'Linux', 'Mac 10.8', 'Windows 7' ] },
+		 { browserName: 'safari', version: '6', platform: 'Mac 10.8' }
+		 */
 	],
+
+	// Uncomment to try this with Sauce Labs
+	//tunnel: 'SauceLabsTunnel',
 
 	// Maximum number of simultaneous integration tests that should be executed on the remote WebDriver service
 	maxConcurrency: 3,
-
-	// Whether or not to start Sauce Connect before running tests
-	useSauceConnect: true,
-
-	// Connection information for the remote WebDriver service. If using Sauce Labs, keep your username and password
-	// in the SAUCE_USERNAME and SAUCE_ACCESS_KEY environment variables unless you are sure you will NEVER be
-	// publishing this configuration file somewhere
-	webdriver: {
-		host: 'localhost',
-		port: 4444
-	},
 
 	// Configuration options for the module loader; any AMD configuration options supported by the Dojo loader can be
 	// used here

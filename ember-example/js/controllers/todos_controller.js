@@ -1,59 +1,51 @@
-/*global Todos Ember */
-'use strict';
+/*global Todos, Ember */
+(function () {
+	'use strict';
 
-Todos.TodosController = Ember.ArrayController.extend({
-	createTodo: function () {
-		// Get the todo title set by the "New Todo" text field
-		var title = this.get('newTitle');
-		if (!title.trim()) {
-			return;
-		}
+	Todos.TodosController = Ember.ArrayController.extend({
+		actions: {
+			createTodo: function () {
+				var title, todo;
 
-		// Create the new Todo model
-		Todos.Todo.createRecord({
-			title: title,
-			isCompleted: false
-		});
+				// Get the todo title set by the "New Todo" text field
+				title = this.get('newTitle').trim();
+				if (!title) {
+					return;
+				}
 
-		// Clear the "New Todo" text field
-		this.set('newTitle', '');
+				// Create the new Todo model
+				todo = this.store.createRecord('todo', {
+					title: title,
+					isCompleted: false
+				});
+				todo.save();
 
-		// Save the new model
-		this.get('store').commit();
-	},
+				// Clear the "New Todo" text field
+				this.set('newTitle', '');
+			},
 
-	clearCompleted: function () {
-		var completed = this.filterProperty('isCompleted', true);
-		completed.invoke('deleteRecord');
+			clearCompleted: function () {
+				var completed = this.get('completed');
+				completed.invoke('deleteRecord');
+				completed.invoke('save');
+			},
+		},
 
-		this.get('store').commit();
-	},
+		/* properties */
 
-	remaining: function () {
-		return this.filterProperty('isCompleted', false).get('length');
-	}.property('@each.isCompleted'),
+		remaining: Ember.computed.filterBy('content', 'isCompleted', false),
+		completed: Ember.computed.filterBy('content', 'isCompleted', true),
 
-	remainingFormatted: function () {
-		var remaining = this.get('remaining');
-		var plural = remaining === 1 ? 'item' : 'items';
-		return '<strong>%@</strong> %@ left'.fmt(remaining, plural);
-	}.property('remaining'),
+		allAreDone: function (key, value) {
+			if (value !== undefined) {
+				this.setEach('isCompleted', value);
+				return value;
+			} else {
+				var length = this.get('length');
+				var completedLength = this.get('completed.length');
 
-	completed: function () {
-		return this.filterProperty('isCompleted', true).get('length');
-	}.property('@each.isCompleted'),
-
-	hasCompleted: function () {
-		return this.get('completed') > 0;
-	}.property('completed'),
-
-	allAreDone: function (key, value) {
-		if (value !== undefined) {
-			this.setEach('isCompleted', value);
-			return value;
-		} else {
-			return !!this.get('length') &&
-				this.everyProperty('isCompleted', true);
-		}
-	}.property('@each.isCompleted')
-});
+				return length > 0 && length === completedLength;
+			}
+		}.property('length', 'completed.length')
+	});
+})();

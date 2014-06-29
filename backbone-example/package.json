@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "An example showing a typical Backbone application tested with Intern",
   "devDependencies": {
-    "intern": "~1.7.0",
+    "intern": "~2.0.0",
     "bower": "~1.2.8"
   },
   "scripts": {

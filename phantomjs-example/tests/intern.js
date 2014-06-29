@@ -3,9 +3,10 @@ define({
     { browserName: 'phantom' }
   ],
 
-  useSauceConnect: false,
-
   suites: [ 'tests/test_example.js' ],
+  tunnelOptions: {
+    port: 4445
+  },
 
   excludeInstrumentation: /./
 });

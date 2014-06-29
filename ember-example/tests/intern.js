@@ -22,23 +22,21 @@ define({
 	// OnDemand. Options that will be permutated are browserName, version, platform, and platformVersion; any other
 	// capabilities options specified for an environment will be copied as-is
 	environments: [
+		{ browserName: 'firefox' },
+		/*
+		// Uncomment these for more testing!
 		{ browserName: 'internet explorer', version: '10', platform: 'Windows 8' },
-		{ browserName: 'chrome', platform: 'Mac 10.8' }
+		{ browserName: 'internet explorer', version: '9', platform: 'Windows 7' },
+		{ browserName: 'firefox', version: '21', platform: 'Mac 10.6' },
+		{ browserName: 'chrome', platform: [ 'Linux', 'Mac 10.8', 'Windows 7' ] },
+		{ browserName: 'safari', version: '6', platform: 'Mac 10.8' }
+		 */
 	],
+
+	//tunnel: 'SauceLabsTunnel',
 
 	// Maximum number of simultaneous integration tests that should be executed on the remote WebDriver service
 	maxConcurrency: 3,
-
-	// Whether or not to start Sauce Connect before running tests
-	useSauceConnect: true,
-
-	// Connection information for the remote WebDriver service. If using Sauce Labs, keep your username and password
-	// in the SAUCE_USERNAME and SAUCE_ACCESS_KEY environment variables unless you are sure you will NEVER be
-	// publishing this configuration file somewhere
-	webdriver: {
-		host: 'localhost',
-		port: 4444
-	},
 
 	// Configuration options for the module loader; any AMD configuration options supported by the Dojo loader can be
 	// used here
@@ -46,15 +44,17 @@ define({
 		// Packages that should be registered with the loader in each testing environment
 		packages: [
 			{ name: 'todo', location: 'js' },
-			{ name: 'jquery', location: 'bower_components/jquery' },
+			{ name: 'jquery', location: 'bower_components/jquery/dist' },
 			{ name: 'ember', location: 'bower_components/ember' },
+			{ name: 'emberData', location: 'bower_components/ember-data' },
 			{ name: 'handlebars', location: 'bower_components/handlebars' },
 			{ name: 'emberStorage', location: 'bower_components/ember-localstorage-adapter' }
 		]
 	},
 
+	reporters: [ 'console' ],
 	// Non-functional test suite(s) to run in each browser
-	suites: [ 'tests/all' ],
+	suites: [ ],
 
 	// Functional test suite(s) to run in each browser once non-functional tests are completed
 	functionalSuites: [ 'tests/functional/Todo' ],
