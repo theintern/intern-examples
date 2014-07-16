@@ -1,12 +1,10 @@
 define({
  environments: [
-    { browserName: 'phantom' }
+    { browserName: 'phantomjs' }
   ],
 
   suites: [ 'tests/test_example.js' ],
-  tunnelOptions: {
-    port: 4445
-  },
+  tunnel: 'NullTunnel',
 
   excludeInstrumentation: /./
 });

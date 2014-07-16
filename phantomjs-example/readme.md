@@ -2,6 +2,7 @@ phantomjs-example
 =============
 
 * Install PhantomJS
+* Ensure that the directory containing the phantomjs executable is in your PATH
 * Run `npm install`
-* Make sure you have PhantomJS WebDriver running with `phantomjs --webdriver=4444`
+* Start your local Selenium server
 * Run tests: `npm test`
