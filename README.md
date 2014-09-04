@@ -75,11 +75,11 @@ See `travis-ci-example/test/teststack_full.js`.
 
 ## From the Wiki
 
-* [BDD](https://github.com/theintern/intern/wiki/Writing-Tests#bdd)
-* [TDD](https://github.com/theintern/intern/wiki/Writing-Tests#tdd)
-* [Object](https://github.com/theintern/intern/wiki/Writing-Tests#object)
-* [Functional](https://github.com/theintern/intern/wiki/Writing-Tests#functional)
-* [Using Reporters](https://github.com/theintern/intern/wiki/Using-Reporters)
+* [BDD](https://github.com/theintern/intern/wiki/Writing-Tests-with-Intern#bdd)
+* [TDD](https://github.com/theintern/intern/wiki/Writing-Tests-with-Intern#tdd)
+* [Object](https://github.com/theintern/intern/wiki/Writing-Tests-with-Intern#object)
+* [Functional](https://github.com/theintern/intern/wiki/Writing-Tests-with-Intern#functional)
+* [Using Reporters](https://github.com/theintern/intern/wiki/Using-and-Writing-Reporters)
 
 ## Other Resources
 
