@@ -11,26 +11,26 @@ Every example has a README that will guide you through the process of setting it
 ### Backbone Application
 
 See `backbone-example` folder and the associated README. 
-This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Backbone Example](http://todomvc.com/architecture-examples/backbone/).
+This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Backbone Example](http://todomvc.com/examples/backbone/).
 This example will generate an HTML code coverage report in the `html-report` directory.
 
 ----
 
 ### Dojo Application
 
-See `dojo-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Dojo Example](http://todomvc.com/architecture-examples/dojo/).
+See `dojo-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Dojo Example](http://todomvc.com/examples/dojo/).
 
 ----
 
 ### Ember Application
 
-See `ember-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Ember Example](http://todomvc.com/architecture-examples/emberjs/).
+See `ember-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Ember Example](http://todomvc.com/examples/emberjs/).
 
 ----
 
 ### jQuery Application
 
-See `jquery-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC jQuery Example](http://todomvc.com/architecture-examples/jquery/).
+See `jquery-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC jQuery Example](http://todomvc.com/examples/jquery/).
 
 ----
 
