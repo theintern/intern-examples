@@ -34,6 +34,12 @@ See `jquery-example` folder and the associated README. This example showcases bo
 
 ----
 
+### React Application
+
+See `react-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC React Example](http://todomvc.com/examples/react/).
+
+----
+
 ### Using Intern with Grunt
 
 Grunt support is built into Intern, all you have to do is include the task in your Gruntfile using

@@ -1,0 +1,19 @@
+{
+	"name": "react-intern-example",
+	"private": true,
+	"version": "0.1.0",
+	"description": "An example showing a typical React application tested with Intern",
+	"dependencies": {
+		"director": "^1.2.0",
+		"react": "^0.12.0",
+		"todomvc-app-css": "^1.0.0",
+		"todomvc-common": "^1.0.1"
+	},
+	"devDependencies": {
+		"intern": "~2.2.2"
+	},
+	"scripts": {
+		"test": "intern-runner config=tests/intern",
+		"postinstall": "bower install"
+	}
+}
