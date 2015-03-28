@@ -15,7 +15,7 @@ define({
 	// Note that the `build` capability will be filled in with the current commit ID from the Travis CI environment
 	// automatically
 	capabilities: {
-		'selenium-version': '2.43.1'
+		'selenium-version': '2.45.0'
 	},
 
 	// Browsers to run integration testing against. Note that version numbers must be strings if used with Sauce
@@ -23,6 +23,7 @@ define({
 	// capabilities options specified for an environment will be copied as-is
 	environments: [
 		{ browserName: 'firefox' },
+		{ browserName: 'chrome' },
 		/*
 		// Uncomment these for more testing!
 		{ browserName: 'internet explorer', version: '10', platform: 'Windows 8' },
@@ -53,7 +54,7 @@ define({
 
 	reporters: [ 'console' ],
 	// Non-functional test suite(s) to run in each browser
-	suites: [ ],
+	suites: [ 'tests/all' ],
 
 	// Functional test suite(s) to run in each browser once non-functional tests are completed
 	functionalSuites: [ 'tests/functional/Todo' ],
