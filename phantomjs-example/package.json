@@ -5,6 +5,6 @@
     "test": "intern-runner config=tests/intern"
   },
   "devDependencies": {
-    "intern": "~2.0.0"
+    "intern": "~2.2.2"
   }
 }
