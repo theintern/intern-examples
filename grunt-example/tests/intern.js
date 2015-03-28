@@ -4,7 +4,7 @@ define({
 	proxyUrl: 'http://localhost:9057/',
 
 	capabilities: {
-		'selenium-version': '2.39.0'
+		'selenium-version': '2.45.0'
 	},
 
 	environments: [

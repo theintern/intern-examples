@@ -18,7 +18,7 @@ define([
 			var emptyModel = new SimpleTodoModel();
 			emptyModel.todos.push({});
 			emptyModel.todos.push({});
-			assert.strictEqual(emptyModel.get('incomplete'), 2, 'Prepopulated model todos should determine incomplete model propery.');
+			assert.strictEqual(emptyModel.get('incomplete'), 2, 'Prepopulated model todos should determine incomplete model property.');
 			emptyModel.set('complete', 2);
 			assert.strictEqual(emptyModel.get('incomplete'), 0, 'Incomplete count should change when complete count is manually updated.');
 		},
@@ -27,7 +27,7 @@ define([
 			var emptyModel = new SimpleTodoModel();
 			emptyModel.todos.push({});
 			emptyModel.todos.push({});
-			assert.strictEqual(emptyModel.get('complete'), 0, 'Prepopulated model todos should determine complete model propery.');
+			assert.strictEqual(emptyModel.get('complete'), 0, 'Prepopulated model todos should determine complete model property.');
 			emptyModel.set('incomplete', 0);
 			assert.strictEqual(emptyModel.get('complete'), 2, 'Complete count should change when incomplete count is manually updated.');
 		}

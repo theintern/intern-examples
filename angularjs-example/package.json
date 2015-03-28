@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "An example showing a typical AngularJS application tested with Intern",
   "devDependencies": {
-    "intern": "~2.0.0"
+    "intern": "~2.2.2"
   },
   "scripts": {
     "test": "intern-runner config=tests/intern",
