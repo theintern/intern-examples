@@ -53,12 +53,11 @@ Running examples:
 
 ----
 
-### Full SauceLabs Example
+### Using Cloud Testing Providers (BrowserStack, Sauce Labs, Testing Bot)
 
-The goal of this example is to test as many browsers on SauceLabs as possible.
-This example might use a lot of your available minutes on SauceLabs and it is not recommended to run it.
-
-See `travis-ci-example/test/teststack_full.js`.
+Each of the examples can be switched from local testing to a cloud testing provider by setting the relevant
+[Cloud testing Intern settings](https://theintern.github.io/intern/#hosted-selenium) within the Intern config
+file in any of the other examples.
 
 ----
 
