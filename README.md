@@ -55,9 +55,9 @@ Running examples:
 
 ### Using Cloud Testing Providers (BrowserStack, Sauce Labs, Testing Bot)
 
-Each of the examples can be switched from local testing to a cloud testing provider by setting the relevant
+Each of the examples within this repository can be switched from running tests locally to using a cloud testing provider by setting the relevant
 [Cloud testing Intern settings](https://theintern.github.io/intern/#hosted-selenium) within the Intern config
-file in any of the other examples.
+for that example.
 
 ----
 
