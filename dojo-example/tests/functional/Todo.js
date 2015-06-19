@@ -11,6 +11,7 @@ define([
 		'submit form': function () {
 			return this.remote
 				.get(require.toUrl(url))
+				.setFindTimeout(5000)
 				.findById('new-todo')
 				.click()
 				.pressKeys('Task 1')
