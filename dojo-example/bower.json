@@ -1,8 +1,11 @@
 {
   "name": "dojo-intern-example",
   "description": "An example of using Dojo and Dijit with Intern",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "dependencies": {
-    "todomvc-common": "~0.1.6"
+    "todomvc-common": "~0.1.6",
+    "dojo": "~1.10.4",
+    "dojox": "~1.10.4",
+    "dijit": "~1.10.4"
   }
 }
