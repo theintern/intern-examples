@@ -3,3 +3,6 @@ node_modules
 components
 bower_components
 html-report
+dojo-example/js/lib/
+angularjs-example/src/
+backbone-example/src/
