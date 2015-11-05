@@ -74,6 +74,7 @@ for that example.
 * [Intern self-testing example](https://github.com/theintern/intern/blob/master/tests/selftest.intern.js)
 * [Functional test demo from dojo2-core](https://github.com/csnover/dojo2-core/tree/master/test/functional)
 * [Cassowary JS](https://github.com/slightlyoff/cassowary.js/)
+* [jQuery PEP](https://github.com/jquery/PEP/tree/master/tests)
 * [Official Intern Tutorial](https://github.com/theintern/intern-tutorial)
 * [Tutorial from ArcGIS](https://github.com/stdavis/intern-tutorial-esri-jsapi)
 * [Firefox Accounts JS Client testing example](https://github.com/mozilla/fxa-js-client/tree/master/tests)
