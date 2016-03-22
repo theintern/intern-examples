@@ -51,7 +51,7 @@ define({
 		]
 	},
 
-	reporters: [ 'console', 'lcovhtml' ],
+	reporters: [ 'Console', 'lcovhtml' ],
 
 	// Non-functional test suite(s) to run in each browser
 	suites: [ 'tests/all' ],

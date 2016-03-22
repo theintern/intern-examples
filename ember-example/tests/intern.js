@@ -52,7 +52,7 @@ define({
 		]
 	},
 
-	reporters: [ 'console' ],
+	reporters: [ 'Console' ],
 	// Non-functional test suite(s) to run in each browser
 	suites: [ ],
 
