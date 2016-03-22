@@ -40,7 +40,7 @@ define({
 
 	// Configuration options for the module loader; any AMD configuration options supported by the Dojo loader can be
 	// used here
-	loader: {
+	loaderOptions: {
 		// Packages that should be registered with the loader in each testing environment
 		packages: [
 			{ name: 'todo', location: 'js' },
@@ -51,7 +51,7 @@ define({
 		]
 	},
 
-	reporters: [ 'console', 'lcovhtml' ],
+	reporters: [ 'Console', 'lcovhtml' ],
 
 	// Non-functional test suite(s) to run in each browser
 	suites: [ 'tests/all' ],
