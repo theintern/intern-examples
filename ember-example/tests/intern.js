@@ -40,7 +40,7 @@ define({
 
 	// Configuration options for the module loader; any AMD configuration options supported by the Dojo loader can be
 	// used here
-	loader: {
+	loaderOptions: {
 		// Packages that should be registered with the loader in each testing environment
 		packages: [
 			{ name: 'todo', location: 'js' },
