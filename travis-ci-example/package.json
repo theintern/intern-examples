@@ -7,6 +7,6 @@
     "test": "intern-client config=tests/intern"
   },
   "devDependencies": {
-    "intern": "~2.0.0"
+    "intern": "~3.4.2"
   }
 }

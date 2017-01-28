@@ -6,7 +6,6 @@
     "intern": "~3.4.2"
   },
   "scripts": {
-    "test": "intern-runner config=tests/intern",
-    "postinstall": "bower install"
+    "test": "intern-runner config=tests/intern"
   }
 }

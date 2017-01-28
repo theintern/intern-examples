@@ -3,21 +3,17 @@ grunt-example
 
 ## Install 
 
-```
-npm install
-```
+1. This demo runs with local Selenium. 
+   Install JRE or JDK for Selenium support.
+   
+2. Install node modules and intern
+
+    ```
+    npm install
+    ```
 
 ## Running Tests
 
-* Make sure you have Intern and Grunt setup
-* This example uses local environments:
-```
-	environments: [
-		{ browserName: 'firefox' }
-	],
-```
-so make sure you have [Selenium Server](http://docs.seleniumhq.org/download/) running and
-[chromedriver](https://code.google.com/p/chromedriver/downloads/list) is in your PATH
 * Run `grunt test`
 
 Check the [Gruntfile](Gruntfile.js) for details.

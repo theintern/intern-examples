@@ -10,7 +10,7 @@
 		"todomvc-common": "^1.0.1"
 	},
 	"devDependencies": {
-		"intern": "~2.2.2"
+		"intern": "~3.4.2"
 	},
 	"scripts": {
 		"test": "intern-runner config=tests/intern",

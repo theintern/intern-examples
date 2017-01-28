@@ -13,11 +13,11 @@ define([
 				.get(require.toUrl(url))
 				.findById('new-todo')
 				.click()
-				.keys('Task 1')
-				.keys('\n')
-				.keys('Task 2')
-				.keys('\n')
-				.keys('Task 3')
+				.pressKeys('Task 1')
+				.pressKeys('\n')
+				.pressKeys('Task 2')
+				.pressKeys('\n')
+				.pressKeys('Task 3')
 				.getProperty('value')
 				.then(function (val) {
 					assert.ok(val.indexOf('Task 3') > -1, 'Task 3 should remain in the new todo');

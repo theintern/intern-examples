@@ -1,3 +1,3 @@
 define([
-	'intern/dojo/has!host-browser?./models/todo'
+	'./models/todo'
 ], function () {});

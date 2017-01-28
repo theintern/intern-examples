@@ -4,14 +4,12 @@ This repository is a collection of examples of using [Intern](https://github.com
 Use these examples as your guide to integrate [Intern](https://github.com/theintern/intern) into your projects!
 Every example has a README that will guide you through the process of setting it up.
 
-**Note:** Most examples require `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` in your `PATH`. Get Sauce Labs credentials by getting a free or a paid [Sauce Labs account](https://saucelabs.com/signup/plan/free). If you don't want to sign up with Sauce Labs, then update the test configuration, set `useSauceConnect: false`, set the appropriate Selenium version and don't forget to run the Selenium server.
-
 ## Examples
 
 ### Backbone Application
 
 See `backbone-example` folder and the associated README.
-This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Backbone Example](http://todomvc.com/examples/backbone/).
+This example showcases both unit tests and functional tests that work locally. It is based on the [TodoMVC Backbone Example](http://todomvc.com/examples/backbone/).
 This example will generate an HTML code coverage report in the `html-report` directory.
 
 ----
@@ -19,12 +17,6 @@ This example will generate an HTML code coverage report in the `html-report` dir
 ### Dojo Application
 
 See `dojo-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Dojo Example](http://todomvc.com/examples/dojo/).
-
-----
-
-### Ember Application
-
-See `ember-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Ember Example](http://todomvc.com/examples/emberjs/).
 
 ----
 

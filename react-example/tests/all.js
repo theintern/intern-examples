@@ -1,4 +1,3 @@
 define([
-	'./todoModel',
-	'./footer'
+	'./todoModel'
 ], function () {});
