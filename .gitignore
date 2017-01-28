@@ -3,3 +3,4 @@ node_modules
 components
 bower_components
 html-report
+.DS_Store

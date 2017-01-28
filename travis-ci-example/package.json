@@ -1,12 +1,12 @@
 {
   "name": "travis-ci-example",
   "description": "An example of using Travis CI with Intern",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "test": "intern-client config=tests/intern"
   },
   "devDependencies": {
-    "intern": "~2.0.0"
+    "intern": "~3.4.2"
   }
 }

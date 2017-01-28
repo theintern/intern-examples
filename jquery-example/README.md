@@ -1,4 +1,4 @@
-dojo-example
+jquery-example
 =============
 
 ## Setup

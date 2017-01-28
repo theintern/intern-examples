@@ -1,9 +1,9 @@
 {
   "name": "jquery-intern-example",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An example showing a typical jQuery application tested with Intern",
   "devDependencies": {
-    "intern": "~2.2.2",
+    "intern": "~3.4.2",
     "bower": "~1.3.9"
   },
   "scripts": {

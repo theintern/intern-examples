@@ -1,12 +1,12 @@
 {
   "name": "intern-grunt-example",
   "description": "An example of an app that uses grunt-intern",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "intern": "~2.2.2",
-    "grunt-cli": "~0.1.13"
+    "grunt": "~1.0.1",
+    "intern": "~3.4.2",
+    "grunt-cli": "~1.2.0"
   },
   "scripts": {
     "test": "grunt intern:client && grunt intern:runner"

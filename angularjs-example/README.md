@@ -1,20 +1,35 @@
-angularjs-example
-========
+angular-1x-example
+=============
 
 ## Setup
 
-```
-npm install -g bower
-npm install
-bower install
-```
+1. Install the JRE or JDK
+   This demo runs with local Selenium, which Intern will automatically install.
 
-Start a Selenium server locally and run:
-```
-npm test
-```
+2. Install intern command line interface
 
-### Run Tests on Sauce Labs
+   ```
+   npm install -g intern-cli
+   ```
 
-Requires Sauce Labs credentials. Uncomment `//tunnel: 'SauceLabsTunnel',` in `tests/intern.js`.
+3. Install node modules and intern
 
+    ```
+    npm install
+    ```
+
+## Running tests
+
+* **Local browser tests**
+
+    ```
+    intern serve
+    ```
+
+    Navigate to `http://localhost:9000/node_modules/intern/client.html?config=tests/intern.js`.
+
+* **Remote node / browser tests**
+
+    ```
+    intern run --webdriver
+    ```
