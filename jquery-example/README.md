@@ -1,10 +1,10 @@
-angular-1x-example
+jquery-example
 =============
 ## Setup
 
-1. This demo runs with local Selenium. 
+1. This demo runs with local Selenium.
    You should install JRE or JDK and then SeleniumTunnel automatically installs Selenium using [selenium-standalone](https://www.npmjs.com/package/selenium-standalone).
-
+   
 2. Install intern command line interface
 
    ```

@@ -22,13 +22,17 @@
 				async: true,
 				parseOnLoad: true,
 				locale: 'en',
+				baseUrl: './',
 				paths: {
-					todo: '../../todo'
+					todo: 'js/todo',
+					dojo: './bower_components/dojo',
+					dijit: './bower_components/dijit',
+					dojox: './bower_components/dojox'
 				},
 				deps: ['dojo/parser', 'dojo/domReady!'],
 				mvc: { debugBindings: true }
 			};
 		</script>
-		<script src="js/lib/dojo/dojo.js"></script>
+		<script src="bower_components/dojo/dojo.js"></script>
 	</body>
 </html>
