@@ -2,8 +2,8 @@ dojo-example
 =============
 ## Setup
 
-1. This demo runs with local Selenium. 
-   Install JRE or JDK for Selenium support.
+1. This demo runs with local Selenium.
+   You should install JRE or JDK and then SeleniumTunnel automatically installs Selenium using [selenium-standalone](https://www.npmjs.com/package/selenium-standalone).
 
 2. Install intern command line interface
 

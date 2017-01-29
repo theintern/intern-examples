@@ -1,7 +1,7 @@
 {
   "name": "angularjs-intern-example",
-  "version": "0.1.0",
-  "description": "An example showing a typical AngularJS application tested with Intern",
+  "version": "0.2.0",
+  "description": "An example showing a typical Angular 1.x application tested with Intern",
   "devDependencies": {
     "intern": "~3.4.2"
   },

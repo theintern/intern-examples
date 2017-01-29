@@ -1,4 +1,4 @@
-jquery-example
+parallel-example
 =============
 ## Setup
 
