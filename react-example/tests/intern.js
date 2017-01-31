@@ -31,10 +31,10 @@ define({
 		// Packages that should be registered with the loader in each testing environment
 		packages: [
 			{ name: 'todo', location: 'js' },
-			{ name: 'react', location: 'bower_components/react' },
-			{ name: 'director', location: 'bower_components/director' },
-			{ name: 'todomvc-app-css', location: 'bower_components/todomvc-app-css' },
-			{ name: 'todomvc-app-common', location: 'bower_components/todomvc-app-common' }
+			{ name: 'react', location: 'node_modules/react' },
+			{ name: 'director', location: 'node_modules/director' },
+			{ name: 'todomvc-app-css', location: 'node_modules/todomvc-app-css' },
+			{ name: 'todomvc-app-common', location: 'node_modules/todomvc-app-common' }
 		]
 	},
 
@@ -46,5 +46,5 @@ define({
 
 	// A regular expression matching URLs to files that should not be included in code coverage analysis. Set to `true`
 	// to completely disable code coverage.
-	excludeInstrumentation: /^(?:tests|bower_components|node_modules)\//
+	excludeInstrumentation: /^(?:tests|node_modules)\//
 });

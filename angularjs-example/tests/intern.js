@@ -31,8 +31,8 @@ define({
 		// Packages that should be registered with the loader in each testing environment
 		packages: [
 			{ name: 'todo', location: 'js' },
-			{ name: 'angular', location: 'bower_components/angular' },
-			{ name: 'angular-mocks', location: 'bower_components/angular-mocks' }
+			{ name: 'angular', location: 'node_modules/angular' },
+			{ name: 'angular-mocks', location: 'node_modules/angular-mocks' }
 		]
 	},
 
@@ -44,5 +44,5 @@ define({
 
 	// A regular expression matching URLs to files that should not be included in code coverage analysis. Set to `true`
 	// to completely disable code coverage.
-	excludeInstrumentation: /^(?:tests|bower_components|node_modules)\//
+	excludeInstrumentation: /^(?:tests|node_modules)\//
 });

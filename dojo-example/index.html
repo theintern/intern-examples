@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Dojo • TodoMVC</title>
-		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
+		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
 		<link rel="stylesheet" href="css/app.css">
 	</head>
 	<body>
@@ -16,7 +16,7 @@
 		</footer>
 		<!-- The base todomvc file adds tooltips and url redirection for todomvc demo
 		purposes and is not needed for the purpose of this example -->
-		<!-- <script src="bower_components/todomvc-common/base.js"></script> -->
+		<!-- <script src="node_modules/todomvc-common/base.js"></script> -->
 		<script>
 			require = {
 				async: true,
@@ -25,14 +25,14 @@
 				baseUrl: './',
 				paths: {
 					todo: 'js/todo',
-					dojo: './bower_components/dojo',
-					dijit: './bower_components/dijit',
-					dojox: './bower_components/dojox'
+					dojo: './node_modules/dojo',
+					dijit: './node_modules/dijit',
+					dojox: './node_modules/dojox'
 				},
 				deps: ['dojo/parser', 'dojo/domReady!'],
 				mvc: { debugBindings: true }
 			};
 		</script>
-		<script src="bower_components/dojo/dojo.js"></script>
+		<script src="node_modules/dojo/dojo.js"></script>
 	</body>
 </html>

@@ -3,10 +3,14 @@
   "version": "0.2.0",
   "description": "An example showing a typical Angular 1.x application tested with Intern",
   "devDependencies": {
+    "angular-mocks": "~1.2.18",
     "intern": "~3.4.2"
   },
+  "dependencies": {
+    "angular": "~1.2.32",
+    "todomvc-common": "~0.1.4"
+  },
   "scripts": {
-    "test": "intern-runner config=tests/intern",
-    "postinstall": "bower install"
+    "test": "intern-runner config=tests/intern"
   }
 }

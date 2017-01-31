@@ -6,7 +6,12 @@ grunt-example
 1. Install the JRE or JDK
    This demo runs with local Selenium, which Intern will automatically install.
    
-2. Install node modules and intern
+2. Install grunt-cli
+   ```
+   npm install -g grunt-cli
+   ```
+
+3. Install node modules and intern
 
     ```
     npm install

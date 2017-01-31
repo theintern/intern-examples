@@ -31,9 +31,9 @@ define({
 		// Packages that should be registered with the loader in each testing environment
 		packages: [
 			{ name: 'todo', location: 'js/todo' },
-			{ name: 'dojo', location: 'bower_components/dojo' },
-			{ name: 'dojox', location: 'bower_components/dojox' },
-			{ name: 'dijit', location: 'bower_components/dijit' }
+			{ name: 'dojo', location: 'node_modules/dojo' },
+			{ name: 'dojox', location: 'node_modules/dojox' },
+			{ name: 'dijit', location: 'node_modules/dijit' }
 		]
 	},
 
