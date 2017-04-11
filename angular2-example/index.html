@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-framework="angular2">
+	<head>
+		<meta charset="utf-8">
+		<title>Angular2 • TodoMVC</title>
+		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+
+		<script src="node_modules/zone.js/dist/zone.js"></script>
+		<script src="node_modules/reflect-metadata/Reflect.js"></script>
+		<script src="node_modules/systemjs/dist/system.src.js"></script>
+		<script>
+			System.config({
+				map: {
+					'rxjs': 'node_modules/rxjs',
+					'@angular': 'node_modules/@angular'
+				},
+				// packages tells the System loader how to load when no filename and/or no extension
+				packages: {
+					'@angular/common': { main: 'bundles/common.umd.js' },
+					'@angular/core': { main: 'bundles/core.umd.js' },
+					'@angular/compiler': { main: 'bundles/compiler.umd.js' },
+					'@angular/platform-browser': { main: 'bundles/platform-browser.umd.js' },
+					'@angular/platform-browser-dynamic': { main: 'bundles/platform-browser-dynamic.umd.js' },
+					'@angular/http': { main: 'bundles/http.umd.js' },
+					'@angular/router': { main: 'bundles/router.umd.js' },
+					'@angular/forms': { main: 'bundles/forms.umd.js' },
+					app: {
+						main: 'bootstrap.js',
+						defaultExtension: 'js'
+					},
+					rxjs: {
+						defaultExtension: 'js'
+					}
+				}
+			});
+		</script>
+		<script>
+			System.import('app').catch(function (err) { console.error(err); });
+		</script>
+	</head>
+	<body>
+		<todo-app></todo-app>
+		<footer class="info">
+			<p>Double-click to edit a todo</p>
+			<p>
+				Created by <a href="http://github.com/samccone">Sam Saccone</a> and <a href="http://github.com/colineberhardt">Colin Eberhardt</a>
+				using <a href="http://angular.io">Angular2</a>
+			</p>
+			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+		</footer>
+	</body>
+</html>

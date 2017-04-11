@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "dependencies": {
+    "@angular/common": "2.4.9",
+    "@angular/core": "2.4.9",
+    "@angular/compiler": "2.4.9",
+    "@angular/core": "2.4.9",
+    "@angular/forms": "2.4.9",
+    "@angular/http": "2.4.9",
+    "@angular/platform-browser": "2.4.9",
+    "@angular/platform-browser-dynamic": "2.4.9",
+    "@angular/router": "3.4.9",
+
+    "systemjs": "0.19.39",
+    "reflect-metadata": "0.1.10",
+    "rxjs": "5.0.1",
+    "zone.js": "0.7.8",
+
+    "todomvc-app-css": "2.0.0",
+    "todomvc-common": "1.0.1"
+  },
+  "devDependencies": {
+    "@types/systemjs": "0.20.2",
+    "intern": "~4.0.0-alpha.0",
+    "typescript": "~2.2.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "intern"
+  }
+}
