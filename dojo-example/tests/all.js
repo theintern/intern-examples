@@ -1,5 +1,5 @@
 define([
 	'./model/SimpleTodoModel',
-	'./store/LocalStorage',
-	'./form/CheckBox'
+	'dojo/has!host-browser?./store/LocalStorage',
+	'dojo/has!host-browser?./form/CheckBox'
 ], function () {});

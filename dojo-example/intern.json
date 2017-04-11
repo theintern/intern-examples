@@ -1,0 +1,17 @@
+{
+  "loader": {
+    "script": "dojo",
+    "config": {
+      "packages": [
+        { "name": "todo", "location": "js/todo" },
+        { "name": "dojo", "location": "node_modules/dojo" },
+        { "name": "dojox", "location": "node_modules/dojox" },
+        { "name": "dijit", "location": "node_modules/dijit" }
+      ]
+    }
+  },
+  "functionalSuites": "tests/functional/Todo",
+  "filterErrorStack": false,
+  "suites": "tests/all",
+  "environments": "chrome"
+}

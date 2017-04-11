@@ -1,35 +1,23 @@
 dojo-example
 =============
 
+It is based on the [TodoMVC Dojo Example](http://todomvc.com/examples/dojo/).
+
 ## Setup
 
-1. Install the JRE or JDK
-   This demo runs with local Selenium, which Intern will automatically install.
+1. Install the JRE or JDK. This demo uses Selenium, which requires Java, to run WebDriver tests.
 
-2. Install intern command line interface
-
+2. Install node modules
    ```
-   npm install -g intern-cli
+   $ npm install
    ```
-
-3. Install node modules and intern
-
-    ```
-    npm install
-    ```
 
 ## Running tests
 
-* **Local browser tests**
+**Unit tests in Node**
 
-    ```
-    intern serve
-    ```
+    $ npm test
 
-    Navigate to `http://localhost:9000/node_modules/intern/client.html?config=tests/intern.js`.
+**WebDriver tests**
 
-* **Remote node / browser tests**
-
-    ```
-    intern run --webdriver
-    ```
+    $ npm test webdriver

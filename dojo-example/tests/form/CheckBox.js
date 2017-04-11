@@ -1,8 +1,9 @@
 define([
-	'intern!object',
-	'intern/chai!assert',
+	'require',
 	'todo/form/CheckBox'
-], function (registerSuite, assert, CheckBox) {
+], function (require, CheckBox) {
+	var registerSuite = intern.getInterface('object').registerSuite;
+	var assert = intern.getAssertions('assert');
 	var checkbox;
 
 	registerSuite({
@@ -12,15 +13,17 @@ define([
 			checkbox = new CheckBox();
 		},
 
-		'get value': function () {
-			checkbox.set('value', 'arbitraryTitle');
-			checkbox.set('checked', true);
-			assert.strictEqual(checkbox.get('value'), true);
-		},
+		tests: {
+			'get value': function () {
+				checkbox.set('value', 'arbitraryTitle');
+				checkbox.set('checked', true);
+				assert.strictEqual(checkbox.get('value'), true);
+			},
 
-		'set checked': function () {
-			checkbox.set('checked', true);
-			assert.strictEqual(checkbox.get('checked'), true);
+			'set checked': function () {
+				checkbox.set('checked', true);
+				assert.strictEqual(checkbox.get('checked'), true);
+			}
 		}
 	});
 });
