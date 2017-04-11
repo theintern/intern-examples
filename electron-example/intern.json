@@ -1,0 +1,14 @@
+{
+  "functionalSuites": "tests/functional/app.js",
+  "nodeSuites": "tests/unit/**/*.js",
+  "preload": ["tests/pre.js", "tests/build_check.js"],
+  "environments": {
+    "browserName": "chrome",
+    "fixSessionCapabilities": false,
+    "chromeOptions": {
+      "binary": "{pwd}/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron",
+      "args": ["app={pwd}/build/bootstrap.js"] 
+    }
+  },
+  "excludeInstrumentation": true
+}
