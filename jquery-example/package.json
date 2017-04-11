@@ -1,9 +1,10 @@
 {
+  "private": true,
   "name": "jquery-intern-example",
   "version": "0.2.0",
   "description": "An example showing a typical jQuery application tested with Intern",
   "devDependencies": {
-    "intern": "~3.4.2"
+    "intern": "~4.0.0-alpha.2"
   },
   "dependencies": {
     "jquery": "~1.9.1",
@@ -11,6 +12,6 @@
     "todomvc-common": "~0.1.4"
   },
   "scripts": {
-    "test": "intern-runner config=tests/intern"
+    "test": "intern"
   }
 }

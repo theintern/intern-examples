@@ -1,16 +1,13 @@
-define([
-	'intern!object',
-	'intern/chai!assert',
-	'require'
-], function (registerSuite, assert, require) {
-	var url = '../../index.html';
+var registerSuite = intern.getInterface('object').registerSuite;
+var assert = intern.getAssertions('assert');
 
-	registerSuite({
-		name: 'Todo (functional)',
+registerSuite({
+	name: 'Todo (functional)',
 
+	tests: {
 		'submit form': function () {
 			return this.remote
-				.get(require.toUrl(url))
+				.get('./index.html')
 				.findById('new-todo')
 				.click()
 				.pressKeys('Task 1')
@@ -18,10 +15,10 @@ define([
 				.pressKeys('Task 2')
 				.pressKeys('\n')
 				.pressKeys('Task 3')
-				.getProperty('value')
+				.getSpecAttribute('value')
 				.then(function (val) {
 					assert.ok(val.indexOf('Task 3') > -1, 'Task 3 should remain in the new todo');
 				});
 		}
-	});
+	}
 });

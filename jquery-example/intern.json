@@ -1,0 +1,6 @@
+{
+  "environments": "chrome",
+  "functionalSuites": "tests/functional/**/*.js",
+  "preload": "js/utils.js",
+  "browserSuites": "tests/utils.js"
+}
