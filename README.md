@@ -1,51 +1,58 @@
 # intern-examples
 
 This repository is a collection of examples of using [Intern](https://github.com/theintern/intern) in web applications.
-Use these examples as your guide to integrate [Intern](https://github.com/theintern/intern) into your projects!
-Every example has a README that will guide you through the process of setting it up.
+Use these examples as your guide to integrate [Intern](https://github.com/theintern/intern) into your projects! Every
+example has a README that will guide you through the process of setting it up.
 
-## Examples
+The first set of examples have been updated to work with Intern 4, while the others are setup for Intern 3.
 
-### Backbone Application
-
-See `backbone-example` folder and the associated README.
-This example showcases both unit tests and functional tests that work locally. It is based on the [TodoMVC Backbone Example](http://todomvc.com/examples/backbone/).
-This example will generate an HTML code coverage report in the `html-report` directory.
-
-----
+## Intern 4 Examples
 
 ### Dojo Application
 
-See `dojo-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC Dojo Example](http://todomvc.com/examples/dojo/).
+See the `dojo-example` folder and the associated [README](./dojo-example/README.md). This example showcases both unit
+tests and functional tests.
 
-----
+### Electron Example
+
+See the `electron-example` folder and the associated [README](./electron-example/README.md). This example showcases
+functional tests using both Intern’s internal WebDriver API and [Spectron](https://github.com/electron/spectron).
 
 ### jQuery Application
 
-See `jquery-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC jQuery Example](http://todomvc.com/examples/jquery/).
+See `jquery-example` folder and the associated [README](./jquery-example/README.md). This example showcases both unit
+tests and functional tests.
 
-----
+### React Application with Enzyme
+
+See `react-enzyme-example` folder and the associated [README](./react-enzyme-example/README.md). This example showcases
+both unit tests and functional tests.
+
+### Using Intern with Grunt
+
+See `grunt-example` folder and the associated [README](./grunt-example/README.md). 
+
+## Intern 3 Examples
+
+Each of the examples can be switched from running tests locally to using a cloud testing provider by setting the
+relevant [Cloud testing Intern settings](https://theintern.github.io/intern/#hosted-selenium) within the Intern config
+for that example.
+
+### Backbone Application
+
+See `backbone-example` folder and the associated README. This example showcases both unit tests and functional tests
+that work locally. It is based on the [TodoMVC Backbone Example](http://todomvc.com/examples/backbone/). This example
+will generate an HTML code coverage report in the `html-report` directory.
 
 ### React Application
 
-See `react-example` folder and the associated README. This example showcases both unit tests and functional tests that work locally and remotely via Sauce Labs. It is based on the [TodoMVC React Example](http://todomvc.com/examples/react/).
-
-----
+See `react-example` folder and the associated README. This example showcases both unit tests and functional tests that
+work locally and remotely via Sauce Labs. It is based on the [TodoMVC React
+Example](http://todomvc.com/examples/react/).
 
 ### Parallel Example
 
 Use bash to run multiple instances of intern locally.
-
-----
-
-### Using Intern with Grunt
-
-Grunt support is built into Intern, all you have to do is include the task in your Gruntfile using
-`grunt.loadNpmTasks('intern');`.
-
-See `grunt-example` folder for an example of how to use it or read the [task documentation](https://github.com/theintern/intern/wiki/Using-Intern-with-Grunt).
-
-----
 
 ### Using Intern with [Travis CI](https://travis-ci.org/)
 ![](https://api.travis-ci.org/theintern/intern-examples.svg?branch=master)
@@ -54,17 +61,6 @@ See `travis-ci-example` folder and the `.travis.yml` in the root of this reposit
 
 Running examples:
 * [https://travis-ci.org/vladikoff/intern-examples](https://travis-ci.org/vladikoff/intern-examples)
-
-----
-
-### Using Cloud Testing Providers (BrowserStack, Sauce Labs, Testing Bot)
-
-Each of the examples within this repository can be switched from running tests locally to using a cloud testing provider by setting the relevant
-[Cloud testing Intern settings](https://theintern.github.io/intern/#hosted-selenium) within the Intern config
-for that example.
-
-----
-
 
 ## External Examples
 
