@@ -5,10 +5,7 @@
   "private": true,
   "devDependencies": {
     "grunt": "~1.0.1",
-    "intern": "~3.4.2"
-  },
-  "peerDependencies": {
-    "grunt-cli": "~1.2.0"
+    "intern": "~4.0.0-alpha.0"
   },
   "scripts": {
     "test": "grunt intern:client && grunt intern:runner"

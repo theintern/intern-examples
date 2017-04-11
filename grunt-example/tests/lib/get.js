@@ -1,20 +1,21 @@
-define([
-	'intern!tdd',
-	'intern/chai!assert',
-	'app/Block'
-], function (tdd, assert) {
-	with (tdd) {
-		suite('get', function () {
+/* global intern, Block */
 
-			test('#getSize', function () {
-				var bSet = new Block();
-				assert.equal(bSet.getSize(), 0);
-			});
+var tdd = intern.getInterface('tdd');
+var assert = intern.getAssertions('assert');
 
-			test('#getSizewithItems', function () {
-				var eSet = new Block([1, 2, 3]);
-				assert.equal(eSet.getSize(), 3);
-			});
-		});
-	}
+var suite = tdd.suite;
+var test = tdd.test;
+
+suite('get', function () {
+	test('#getSize', function () {
+		var bSet = new Block();
+		assert.equal(bSet.getSize(), 0);
+	});
+
+	test('#getSizewithItems', function () {
+		var eSet = new Block([1, 2, 3]);
+		assert.equal(eSet.getSize(), 3);
+	});
 });
+
+console.log('called suite get');

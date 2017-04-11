@@ -2,24 +2,18 @@
 module.exports = function (grunt) {
 	grunt.initConfig({
 		intern: {
-			client: {
-				options: {
-					// for other available options, see:
-					// https://github.com/theintern/intern/wiki/Using-Intern-with-Grunt#task-options
-					config: 'tests/intern'
-				}
+			options: {
+				excludeInstrumentation: true,
+				preload: 'app/Block.js',
+				suites: [ 'tests/lib/add.js', 'tests/lib/get.js' ]
 			},
-			clientSuiteGet: {
-				// an example of specifying a suite name
-				options: {
-					config: 'tests/intern',
-					suites: ['tests/lib/get']
-				}
+			node: {
+				options: {}
 			},
-			runner: {
+			browser: {
 				options: {
-					config: 'tests/intern',
-					runType: 'runner'
+					webdriver: true,
+					environments: 'chrome'
 				}
 			}
 		}
@@ -29,7 +23,10 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('intern');
 
 	// Register a test task
-	grunt.registerTask('test', ['intern:client']);
+	grunt.registerTask('test', ['intern:node']);
+
+	// Register a task for webdriver tests
+	grunt.registerTask('test:browser', ['intern:webdriver']);
 
 	// By default we just test
 	grunt.registerTask('default', ['test']);
