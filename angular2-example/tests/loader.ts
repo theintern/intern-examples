@@ -19,7 +19,8 @@ intern.registerLoader(config => {
 			map: {
 				rxjs: 'node_modules/rxjs',
 				'@angular': 'node_modules/@angular',
-				tests: 'tests'
+				tests: 'dist/tests',
+				app: 'dist/app'
 			},
 			packages: {
 				'@angular/common': { main: 'bundles/common.umd.js' },
