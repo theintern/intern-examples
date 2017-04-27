@@ -52,7 +52,7 @@ define([ 'intern' ], function (intern) {
 	};
 
 	if (intern.mode === 'runner') {
-		config.reporters = [ 'Runner', 'Lcovhtml' ];
+		config.reporters = [ 'Runner', 'LcovHtml' ];
 	}
 
 	return config;
