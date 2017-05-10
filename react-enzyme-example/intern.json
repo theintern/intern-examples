@@ -4,7 +4,6 @@
   "nodeSuites": "tests/unit/**/*.js",
   "browserSuites": "tests/unit/reducers/todos.js",
   "functionalSuites": "tests/functional/**/*.js",
-  "excludeInstrumentation": true,
   "environments": "chrome",
   "preload": "tests/pre.js"
 }
