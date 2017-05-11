@@ -22,7 +22,12 @@
 	  "dom"
 	],
     "types": [
-      "intern"
+      "intern",
+      "systemjs"
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/intern/types"
     ]
   }
 }

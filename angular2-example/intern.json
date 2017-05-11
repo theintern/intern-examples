@@ -1,6 +1,6 @@
 {
   "environments": "chrome",
-  "functionalSuites": "dist/tests/functional/Todo.js",
   "loader": "dist/tests/loader.js",
-  "suites": "dist/tests/services/store.js"
+  "functionalSuites": "tests/functional/Todo.js",
+  "suites": "tests/services/store.js"
 }
