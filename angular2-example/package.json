@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@types/systemjs": "0.20.2",
-    "intern": "../../intern/_build/src",
+    "intern": "~4.0.0-alpha.0",
     "typescript": "~2.3.0"
   },
   "scripts": {
