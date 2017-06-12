@@ -1,7 +1,9 @@
 {
   "functionalSuites": "tests/functional/app.js",
-  "nodeSuites": "tests/unit/**/*.js",
-  "preload": ["tests/pre.js", "tests/build_check.js"],
+  "node": {
+    "suites": "tests/unit/**/*.js",
+    "plugins": ["tests/build_check.js", "tests/pre.js"]
+  },
   "environments": {
     "browserName": "chrome",
     "fixSessionCapabilities": false,
@@ -10,5 +12,14 @@
       "args": ["app={pwd}/build/bootstrap.js"] 
     }
   },
-  "excludeInstrumentation": true
+  "filterErrorStack": true,
+  "configs": {
+      "spectron": {
+          "suites": "tests/functional/spectron.js",
+          "environments": [],
+          "node": {
+              "suites": []
+          }
+      }
+  }
 }

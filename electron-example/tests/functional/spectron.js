@@ -1,14 +1,12 @@
 // A simple test to verify a visible window is opened with a title
 import { Application } from 'spectron';
 
-const assert = intern.getAssertions('assert');
-const { registerSuite } = intern.getInterface('object');
+const assert = intern.getPlugin('chai.assert');
+const { registerSuite } = intern.getPlugin('interface.object');
 
 let app;
 
-registerSuite({
-	name: 'Application',
-
+registerSuite('Application', {
 	beforeEach() {
 		app = new Application({
 			path: 'node_modules/electron/dist/Electron.app/Contents/MacOS/Electron',

@@ -1,9 +1,7 @@
-const assert = intern.getAssertions('assert');
-const { registerSuite } = intern.getInterface('object');
+const assert = intern.getPlugin('chai.assert');
+const { registerSuite } = intern.getPlugin('interface.object');
 
-registerSuite({
-	name: 'Application',
-
+registerSuite('Application', {
 	beforeEach() {
 		return this.remote.refresh();
 	},

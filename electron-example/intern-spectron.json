@@ -1,4 +1,0 @@
-{
-  "extends": "./intern.json",
-  "suites": "tests/functional/spectron.js"
-}
