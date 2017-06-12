@@ -1,5 +1,5 @@
-const { describe, it } = intern.getInterface('bdd');
-const expect = intern.getAssertions('expect');
+const { describe, it } = intern.getPlugin('interface.bdd');
+const expect = intern.getPlugin('chai.expect');
 
 describe('Todo (functional)', suite => {
 	it('should let users add items', function () {

@@ -19,10 +19,10 @@
   },
   "devDependencies": {
     "enzyme": "~2.8.0",
-    "intern": "~4.0.0-alpha.3",
+    "intern": "file:../../intern/_build/src/intern-4.0.0-pre.tgz",
     "react-addons-test-utils": "~15.5.0",
-    "react-test-renderer": "~15.5.0",
     "react-scripts": "~0.9.3",
+    "react-test-renderer": "~15.5.0",
     "serve": "~5.1.1",
     "systemjs": "~0.20.12",
     "systemjs-plugin-babel": "~0.0.21"

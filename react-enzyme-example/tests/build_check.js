@@ -1,22 +1,22 @@
 /* global intern */
-if (intern.environment === 'webdriver') {
-	var existsSync = require('fs').existsSync;
-	var serve = require('serve');
-	var server;
+var existsSync = require('fs').existsSync;
+var serve = require('serve');
+var server;
 
-	intern.on('beforeRun', function () {
-		if (!existsSync('build')) {
-			throw new Error('Project must be built first');
-		}
-		else {
-			server = serve('build', {
-				port: 10543,
-				silent: true
-			});
-		}
-	});
+intern.on('beforeRun', function () {
+	var config = intern.config;
 
-	intern.on('afterRun', function () {
-		server.stop();
-	});
-}
+	if (!existsSync('build')) {
+		throw new Error('Project must be built first');
+	}
+	else if (config.environments.length > 0) {
+		server = serve('build', {
+			port: 10543,
+			silent: true
+		});
+	}
+});
+
+intern.on('afterRun', function () {
+	server.stop();
+});

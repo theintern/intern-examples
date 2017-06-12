@@ -1,9 +1,37 @@
 {
-  "contactTimeout": 3000,
-  "loader": "tests/loader.js",
-  "nodeSuites": "tests/unit/**/*.js",
-  "browserSuites": "tests/unit/reducers/todos.js",
+  "connectTimeout": 3000,
+  "browser": {
+    "suites": "tests/unit/reducers/todos.js",
+    "loader": {
+      "script": "systemjs",
+      "options": {
+        "map": {
+          "plugin-babel": "node_modules/systemjs-plugin-babel/plugin-babel.js",
+          "systemjs-babel-build": "node_modules/systemjs-plugin-babel/systemjs-babel-browser.js"
+        },
+        "packages": {
+          "src": {
+            "defaultExtension": "js"
+          }
+        },
+        "transpiler": "plugin-babel"
+      }
+    }
+  },
+  "node": {
+    "suites": "tests/unit/**/*.js",
+    "plugins": [
+      "tests/build_check.js",
+      "node_modules/babel-register/lib/node.js"
+    ]
+  },
+  "instrumenterOptions": {
+    "esModules": true
+  },
   "functionalSuites": "tests/functional/**/*.js",
+  "capabilities": {
+    "fixSessionCapabilities": "no-detect"
+  },
   "environments": "chrome",
-  "preload": "tests/pre.js"
+  "filterErrorStack": true
 }

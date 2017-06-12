@@ -1,8 +1,8 @@
 import todos from '../../../src/reducers/todos';
 import * as types from '../../../src/constants/ActionTypes';
 
-const { describe, it } = intern.getInterface('bdd');
-const expect = intern.getAssertions('expect');
+const { describe, it } = intern.getPlugin('interface.bdd');
+const expect = intern.getPlugin('chai.expect');
 
 describe('todos reducer', () => {
 	it('should handle initial state', () => {

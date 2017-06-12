@@ -17,8 +17,7 @@ export default function todos(state = initialState, action) {
           completed: false,
           text: action.text
         },
-        ...state
-      ]
+      ].concat(state)
 
     case DELETE_TODO:
       return state.filter(todo =>
@@ -26,25 +25,28 @@ export default function todos(state = initialState, action) {
       )
 
     case EDIT_TODO:
-      return state.map(todo =>
-        todo.id === action.id ?
-          { ...todo, text: action.text } :
-          todo
-      )
+      return state.map(todo => {
+        if (todo.id === action.id) {
+		  return Object.assign({}, todo, { text: action.text })
+        } else {
+          return todo
+        }
+	  })
 
     case COMPLETE_TODO:
-      return state.map(todo =>
-        todo.id === action.id ?
-          { ...todo, completed: !todo.completed } :
-          todo
-      )
+      return state.map(todo => {
+        if (todo.id === action.id) {
+		  return Object.assign({}, todo, { completed: !todo.completed })
+        } else {
+          return todo
+        }
+	})
 
     case COMPLETE_ALL:
       const areAllMarked = state.every(todo => todo.completed)
-      return state.map(todo => ({
-        ...todo,
-        completed: !areAllMarked
-      }))
+      return state.map(todo => {
+		  return Object.assign({}, todo, { completed: !areAllMarked })
+      })
 
     case CLEAR_COMPLETED:
       return state.filter(todo => todo.completed === false)

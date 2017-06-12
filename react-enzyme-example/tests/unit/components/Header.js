@@ -3,8 +3,8 @@ import { shallow, render } from 'enzyme'
 import Header from '../../../src/components/Header'
 import TodoTextInput from '../../../src/components/TodoTextInput'
 
-const { describe, it } = intern.getInterface('bdd');
-const expect = intern.getAssertions('expect');
+const { describe, it } = intern.getPlugin('interface.bdd');
+const expect = intern.getPlugin('chai.expect');
 
 const setup = () => {
 	const addTodo = () => { addTodo.called = true; }
