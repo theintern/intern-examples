@@ -1,6 +1,9 @@
 {
+  "capabilities": { "fixSessionCapabilities": "no-detect" },
   "environments": "chrome",
   "functionalSuites": "tests/functional/**/*.js",
-  "preload": "js/utils.js",
-  "browserSuites": "tests/utils.js"
+  "require": "js/utils.js",
+  "browser": {
+      "suites": "tests/utils.js"
+  }
 }

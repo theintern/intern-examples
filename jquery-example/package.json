@@ -3,12 +3,11 @@
   "name": "jquery-intern-example",
   "version": "0.2.0",
   "description": "An example showing a typical jQuery application tested with Intern",
-  "devDependencies": {
-    "intern": "~4.0.0-alpha.2"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "jquery": "~1.9.1",
     "handlebars": "~1.0.0",
+    "intern": "~4.0.0-alpha.6",
+    "jquery": "~1.9.1",
     "todomvc-common": "~0.1.4"
   },
   "scripts": {
