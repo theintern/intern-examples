@@ -1,11 +1,9 @@
 import { TodoStore } from 'app/services/store';
 
-const registerSuite = intern.getInterface('object').registerSuite;
-const assert = intern.getAssertions('assert');
+const { registerSuite } = intern.getInterface('object');
+const { assert } = intern.getPlugin('chai');
 
-registerSuite({
-	name: 'TodoStore',
-
+registerSuite('TodoStore', {
 	before() {
 		const globalVar: any = typeof window !== 'undefined' ? window : global;
 		if (!globalVar.localStorage) {

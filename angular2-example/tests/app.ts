@@ -1,16 +1,12 @@
 import TodoApp from 'app/app';
 
-const registerSuite = intern.getInterface('object').registerSuite;
-const assert = intern.getAssertions('assert');
+const { registerSuite } = intern.getInterface('object');
+const { assert } = intern.getPlugin('chai');
 
-registerSuite({
-	name: 'TodoApp',
-
-	tests: {
-		create() {
-			const fakeStore: any = {};
-			const app = new TodoApp(fakeStore);
-			assert.isNotNull(app);
-		}
+registerSuite('TodoApp', {
+	create() {
+		const fakeStore: any = {};
+		const app = new TodoApp(fakeStore);
+		assert.isNotNull(app);
 	}
 });
