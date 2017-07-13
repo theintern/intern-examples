@@ -1,66 +1,29 @@
 # intern-examples
 
-This repository is a collection of examples of using [Intern](https://github.com/theintern/intern) in web applications.
-Use these examples as your guide to integrate [Intern](https://github.com/theintern/intern) into your projects! Every
-example has a README that will guide you through the process of setting it up.
+![](https://api.travis-ci.org/theintern/intern-examples.svg?branch=master)
 
-The first set of examples have been updated to work with Intern 4, while the others are setup for Intern 3.
+<br><p align="center"><img src="https://cdn.rawgit.com/theintern/intern/master/docs/logo.svg" alt="Intern logo" height="128"></p><br>
+
+[Intern](https://github.com/theintern/intern) is a complete test system for JavaScript designed to help you write and run consistent, high-quality test cases for your JavaScript libraries and applications. It can be used to test _any_ JavaScript code.
+
+This repository is a collection of examples of using Intern in web applications. Use these examples as your guide to integrate Intern into your projects! Every example has a README that will guide you through the process of setting it up.
 
 ## Intern 4 Examples
 
-### Dojo Application
-
-See the `dojo-example` folder and the associated [README](./dojo-example/README.md). This example showcases both unit
-tests and functional tests.
-
-### Electron Example
-
-See the `electron-example` folder and the associated [README](./electron-example/README.md). This example showcases
-functional tests using both Intern’s internal WebDriver API and [Spectron](https://github.com/electron/spectron).
-
-### jQuery Application
-
-See `jquery-example` folder and the associated [README](./jquery-example/README.md). This example showcases both unit
-tests and functional tests.
-
-### React Application with Enzyme
-
-See `react-enzyme-example` folder and the associated [README](./react-enzyme-example/README.md). This example showcases
-both unit tests and functional tests.
-
-### Using Intern with Grunt
-
-See `grunt-example` folder and the associated [README](./grunt-example/README.md). 
+* [Dojo](./dojo-example)
+* [Electron](./electron-example)
+* [jQuery](./jquery-example)
+* [React with Enzyme](./react-enzyme-example)
+* [Grunt](./grunt-example)
 
 ## Intern 3 Examples
 
-Each of the examples can be switched from running tests locally to using a cloud testing provider by setting the
-relevant [Cloud testing Intern settings](https://theintern.github.io/intern/#hosted-selenium) within the Intern config
-for that example.
+Each of the examples can be switched from running tests locally to using a cloud testing provider by setting the relevant [Cloud testing Intern settings](https://theintern.github.io/intern/#hosted-selenium) within the Intern config for that example.
 
-### Backbone Application
-
-See `backbone-example` folder and the associated README. This example showcases both unit tests and functional tests
-that work locally. It is based on the [TodoMVC Backbone Example](http://todomvc.com/examples/backbone/). This example
-will generate an HTML code coverage report in the `html-report` directory.
-
-### React Application
-
-See `react-example` folder and the associated README. This example showcases both unit tests and functional tests that
-work locally and remotely via Sauce Labs. It is based on the [TodoMVC React
-Example](http://todomvc.com/examples/react/).
-
-### Parallel Example
-
-Use bash to run multiple instances of intern locally.
-
-### Using Intern with [Travis CI](https://travis-ci.org/)
-![](https://api.travis-ci.org/theintern/intern-examples.svg?branch=master)
-
-See `travis-ci-example` folder and the `.travis.yml` in the root of this repository.
-
-Running examples:
-* [https://travis-ci.org/vladikoff/intern-examples](https://travis-ci.org/vladikoff/intern-examples)
+* [Backbone](./backbone-example)
+* [React](./react-example)
+* [Parallelized Intern](./parallel-example)
+* [Travis CI](./travis-ci-example)
 
 ## External Examples
 
@@ -73,19 +36,8 @@ Running examples:
 * [Tutorial from ArcGIS](https://github.com/stdavis/intern-tutorial-esri-jsapi)
 * [Firefox Accounts JS Client testing example](https://github.com/mozilla/fxa-js-client/tree/master/tests)
 
-## From the Wiki
+## Contributing
 
-* [BDD](https://github.com/theintern/intern/wiki/Writing-Tests-with-Intern#bdd)
-* [TDD](https://github.com/theintern/intern/wiki/Writing-Tests-with-Intern#tdd)
-* [Object](https://github.com/theintern/intern/wiki/Writing-Tests-with-Intern#object)
-* [Functional](https://github.com/theintern/intern/wiki/Writing-Tests-with-Intern#functional)
-* [Using Reporters](https://github.com/theintern/intern/wiki/Using-and-Writing-Reporters)
+We welcome contributions of new examples, or improvements/updates to existing examples. Just fork this repo, add your example to a new branch, and make a PR. Note that like most open source projects, we require everyone to sign a [contributor license agreement](https://js.foundation/CLA/) when making non-trivial PRs.
 
-## Other Resources
-
-[Intern Wiki](https://github.com/theintern/intern/wiki) ::
-[Intern Website](http://theintern.io/)
-
-## Got Examples?
-
-If you have examples of using Intern in your projects, please file an issue and we will try to add it to this list.
+© [SitePen, Inc.](http://sitepen.com) and its [contributors](https://github.com/theintern/intern/graphs/contributors)
