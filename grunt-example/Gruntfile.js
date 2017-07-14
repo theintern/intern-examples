@@ -4,15 +4,15 @@ module.exports = function (grunt) {
 		intern: {
 			options: {
 				excludeInstrumentation: true,
-				preload: 'app/Block.js',
-				suites: [ 'tests/lib/add.js', 'tests/lib/get.js' ]
+				require: 'app/Block.js',
+				suites: [ 'tests/lib/add.js', 'tests/lib/get.js' ],
+				reporters: [ 'runner' ]
 			},
 			node: {
 				options: {}
 			},
 			browser: {
 				options: {
-					webdriver: true,
 					environments: 'chrome'
 				}
 			}
@@ -26,7 +26,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('test', ['intern:node']);
 
 	// Register a task for webdriver tests
-	grunt.registerTask('test:browser', ['intern:webdriver']);
+	grunt.registerTask('test:browser', ['intern:browser']);
 
 	// By default we just test
 	grunt.registerTask('default', ['test']);

@@ -1,7 +1,7 @@
 /* global intern, Block */
 
 var tdd = intern.getInterface('tdd');
-var assert = intern.getAssertions('assert');
+var assert = intern.getPlugin('chai').assert;
 
 var suite = tdd.suite;
 var test = tdd.test;
