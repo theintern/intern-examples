@@ -1,0 +1,3 @@
+define([
+	'./models/todo'
+], function () {});
