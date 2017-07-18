@@ -1,31 +1,44 @@
 {
   "private": true,
   "dependencies": {
-    "@angular/common": "2.4.9",
-    "@angular/compiler": "2.4.9",
-    "@angular/core": "2.4.9",
-    "@angular/forms": "2.4.9",
-    "@angular/http": "2.4.9",
-    "@angular/platform-browser": "2.4.9",
-    "@angular/platform-browser-dynamic": "2.4.9",
-    "@angular/router": "3.4.9",
-    "reflect-metadata": "0.1.10",
-    "rxjs": "~5.4.2",
+    "@angular/common": "^4.3.0",
+    "@angular/compiler": "^4.3.0",
+    "@angular/core": "^4.3.0",
+    "@angular/forms": "^4.3.0",
+    "@angular/platform-browser": "^4.3.0",
+    "@angular/platform-browser-dynamic": "^4.3.0",
+    "@angular/router": "^4.3.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.4.2",
     "systemjs": "0.19.39",
     "todomvc-app-css": "2.0.0",
     "todomvc-common": "1.0.1",
-    "zone.js": "0.7.8"
+    "tslib": "^1.7.1",
+    "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@dojo/core": "~2.0.0-beta2.2",
     "@dojo/has": "~2.0.0-beta1.1",
     "@dojo/shim": "~2.0.0-beta2.2",
+    "@types/sinon": "^2.3.3",
     "@types/systemjs": "0.20.2",
-    "intern": "~4.0.0-alpha.7",
+    "concurrently": "^3.5.0",
+    "cpx": "^1.5.0",
+    "intern": "^4.0.0-alpha.10",
+    "lite-server": "^2.3.0",
+    "sinon": "^2.3.8",
     "typescript": "~2.3.0"
   },
   "scripts": {
-    "build": "tsc",
-    "test": "intern"
+    "copy": "cpx \"app/**/*.{html,css}\" dist/app",
+    "copy:watch": "cpx \"app/**/*.{html,css}\" dist/app --watch",
+    "compile": "tsc",
+    "compile:watch": "tsc -w",
+    "build": "concurrently \"npm run copy\" \"npm run compile\"",
+    "build:watch": "concurrently \"npm run copy:watch\" \"npm run compile:watch\"",
+    "pretest": "npm run build",
+    "test": "intern",
+    "serve": "lite-server",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\""
   }
 }

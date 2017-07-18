@@ -1,21 +1,52 @@
 import { Component } from '@angular/core';
-import { TodoStore, Todo } from './services/store';
+import { TodoService } from './services/store';
+import { Todo } from './models/todo';
 
 @Component({
 	selector: 'todo-app',
-	templateUrl: 'app/app.html'
+	templateUrl: './app.html'
 })
-export default class TodoApp {
-	todoStore: TodoStore;
+export class TodoApp {
+	private todoStore: TodoService;
+	private todos: Todo[] = [];
+
+	private remaining = 0;
+	private completed = 0;
+
 	newTodoText = '';
 
-	constructor(todoStore: TodoStore) {
+	constructor(todoStore: TodoService) {
 		this.todoStore = todoStore;
 	}
 
-	stopEditing(todo: Todo, editedTitle: string) {
-		todo.title = editedTitle;
-		todo.editing = false;
+	ngOnInit() {
+		this.todoStore.get().subscribe(todos => this.initialize(todos));
+	}
+
+	private initialize(todos: Todo[]) {
+		this.todos = todos;
+
+		this.remaining = 0;
+		this.completed = 0;
+
+		todos.forEach(todo => {
+			if (todo.completed) {
+				this.completed++;
+			} else {
+				this.remaining++;
+			}
+		});
+	}
+
+	setAllTo(value: boolean) {
+		this.todoStore.set(
+				this.todos.map(todo => {
+					todo.completed = value;
+					return todo;
+				})
+			)
+			.subscribe(todos => this.initialize(todos))
+		;
 	}
 
 	cancelEditingTodo(todo: Todo) {
@@ -26,11 +57,15 @@ export default class TodoApp {
 		editedTitle = editedTitle.trim();
 		todo.editing = false;
 
+		let observable;
 		if (editedTitle.length === 0) {
-			return this.todoStore.remove(todo);
+			observable = this.todoStore.delete(todo);
+		} else {
+			todo.title = editedTitle;
+			observable = this.todoStore.update(todo);
 		}
 
-		todo.title = editedTitle;
+		observable.subscribe(todos => this.initialize(todos));
 	}
 
 	editTodo(todo: Todo) {
@@ -38,20 +73,29 @@ export default class TodoApp {
 	}
 
 	removeCompleted() {
-		this.todoStore.removeCompleted();
+		this.todoStore.delete(this.todos.filter(todo => todo.completed))
+			.subscribe(todos => this.initialize(todos))
+		;
 	}
 
 	toggleCompletion(todo: Todo) {
-		this.todoStore.toggleCompletion(todo);
+		todo.completed = !todo.completed;
+		this.todoStore.set(this.todos)
+			.subscribe(todos => this.initialize(todos))
+		;
 	}
 
 	remove(todo: Todo){
-		this.todoStore.remove(todo);
+		this.todoStore.delete(todo)
+			.subscribe(todos => this.initialize(todos))
+		;
 	}
 
 	addTodo() {
 		if (this.newTodoText.trim().length) {
-			this.todoStore.add(this.newTodoText);
+			this.todoStore.add(this.newTodoText)
+				.subscribe(todos => this.initialize(todos))
+			;
 			this.newTodoText = '';
 		}
 	}

@@ -1,77 +1,61 @@
-export class Todo {
-	completed: Boolean;
-	editing: Boolean;
+import { Injectable } from '@angular/core';
+import { Todo, TodoObject } from '../models/todo';
+import { LocalStorageService } from './localStorage';
 
-	private _title: String;
-	get title() {
-		return this._title;
-	}
-	set title(value: String) {
-		this._title = value.trim();
-	}
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
+import 'rxjs/add/operator/map';
 
-	constructor(title: String) {
-		this.completed = false;
-		this.editing = false;
-		this.title = title.trim();
-	}
-}
+export { Todo, TodoObject }
 
-export class TodoStore {
-	todos: Array<Todo>;
+@Injectable()
+export class TodoService {
+	constructor(private storage: LocalStorageService<TodoObject[]>) {}
 
-	constructor() {
-		let persistedTodos = JSON.parse(localStorage.getItem('angular2-todos') || '[]');
-		// Normalize back into classes
-		this.todos = persistedTodos.map( (todo: {_title: String, completed: Boolean}) => {
-			let ret = new Todo(todo._title);
-			ret.completed = todo.completed;
-			return ret;
-		});
+	get(): Observable<Todo[]> {
+		const objects = this.storage.get() || [];
+		return Observable.of(objects.map(object => new Todo(object)));
 	}
 
-	private updateStore() {
-		localStorage.setItem('angular2-todos', JSON.stringify(this.todos));
+	add(title: string): Observable<Todo[]> {
+		const objects = this.storage.get() || [];
+		objects.push(new Todo({ title }));
+
+		this.storage.set(objects);
+
+		return this.get();
 	}
 
-	private getWithCompleted(completed: Boolean) {
-		return this.todos.filter((todo: Todo) => todo.completed === completed);
+	update(todo: Todo): Observable<Todo[]> {
+		const objects = this.storage.get() || [];
+		const index = objects.findIndex(object => object.id === todo.id);
+
+		if (index === -1) {
+			objects.push(todo);
+		} else {
+			objects.splice(index, 1, todo);
+		}
+
+		this.storage.set(objects);
+
+		return this.get();
 	}
 
-	allCompleted() {
-		return this.todos.length === this.getCompleted().length;
+	set(todos: Todo[]): Observable<Todo[]> {
+		this.storage.set(todos);
+		return this.get();
 	}
 
-	setAllTo(completed: Boolean) {
-		this.todos.forEach((t: Todo) => t.completed = completed);
-		this.updateStore();
-	}
+	delete(todos: Todo | Todo[]): Observable<Todo[]> {
+		if (!Array.isArray(todos)) {
+			todos = [ todos ];
+		}
 
-	removeCompleted() {
-		this.todos = this.getWithCompleted(false);
-		this.updateStore();
-	}
+		const ids = new Set(todos.map(todo => todo.id));
+		const objects = (this.storage.get() || []).filter(todo => !ids.has(todo.id));
 
-	getRemaining() {
-		return this.getWithCompleted(false);
-	}
+		this.storage.set(objects);
 
-	getCompleted() {
-		return this.getWithCompleted(true);
-	}
-
-	toggleCompletion(todo: Todo) {
-		todo.completed = !todo.completed;
-		this.updateStore();
-	}
-
-	remove(todo: Todo) {
-		this.todos.splice(this.todos.indexOf(todo), 1);
-		this.updateStore();
-	}
-
-	add(title: String) {
-		this.todos.push(new Todo(title));
-		this.updateStore();
+		return this.get();
 	}
 }
