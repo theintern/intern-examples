@@ -1,74 +1,28 @@
 {
   "environments": "chrome",
-  "functionalSuites": "tests/functional/Todo.js",
-  "suites": "tests/services/store.js",
+  "functionalSuites": "dist/tests/functional/Todo.js",
   "browser": {
-      "loader": {
-          "script": "systemjs",
-          "options": {
-              "baseURL": "/node_modules",
-              "map": {
-                  "tests": "/dist/tests",
-                  "app": "/dist/app"
-              },
-              "packageConfigPaths": [
-                  "./node_modules/*/package.json",
-                  "./node_modules/@angular/*/package.json"
-              ],
-              "packages": {
-                  "app": {
-                      "main": "bootstrap.js",
-                      "defaultExtension": "js"
-                  },
-                  "rxjs": {
-                      "defaultExtension": "js"
-                  }
-              }
-          }
-      },
-      "require": [
-		"node_modules/reflect-metadata/Reflect.js",
-		"node_modules/zone.js/dist/zone.js"
-      ]
-  },
-  "node": {
-      "loader": {
-          "script": "systemjs",
-          "options": {
-              "baseURL": "./node_modules",
-              "map": {
-                  "tests": "./dist/tests",
-                  "app": "./dist/app",
-                  "istanbul": "./dist/tests/systemjs-istanbuljs.js",
-                  "fs": "@node/fs",
-                  "babylon": "@node/babylon",
-                  "babel-types": "@node/babel-types",
-                  "babel-traverse": "@node/babel-traverse",
-                  "babel-template": "@node/babel-template",
-                  "babel-generator": "@node/babel-generator",
-                  "crypto": "@node/crypto",
-                  "path": "@node/path",
-                  "url": "@node/url"
-              },
-              "packageConfigPaths": [
-                  "./node_modules/*/package.json",
-                  "./node_modules/@angular/*/package.json"
-              ],
-              "packages": {
-                  "app": {
-                      "main": "./bootstrap.js",
-                      "defaultExtension": "js"
-                  },
-                  "rxjs": {
-                      "defaultExtension": "js"
-                  }
-              },
-              "meta": {
-                  "app/*": {
-                      "loader": "istanbul"
-                  }
-              }
-          }
+    "loader": {
+      "script": "systemjs"
+    },
+    "plugins": [
+      {
+        "script": "dist/tests/intern-angular-shim.js",
+        "options": {
+          "appConfig": "dist/systemjs.config.js",
+          "testConfig": "dist/tests/systemjs.config.js",
+          "require": [
+            "node_modules/core-js/client/shim.js",
+            "node_modules/zone.js/dist/zone.js",
+            "node_modules/zone.js/dist/long-stack-trace-zone.js"
+          ]
+        }
       }
-  }
+    ],
+    "suites": [
+      "dist/tests/services/store.js",
+      "dist/tests/app.js"
+    ]
+  },
+  "excludeInstrumentation": "(?:node_modules|browser|tests)\\/|dist\\/[^\\/]+\\.js"
 }

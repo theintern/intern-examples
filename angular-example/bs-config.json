@@ -1,0 +1,15 @@
+{
+  "files": [
+    "./**/*.js",
+    "./intern.json"
+  ],
+  "open": false,
+  "logLevel": "silent",
+  "logConnections": false,
+  "server": {
+    "baseDir": ".",
+    "middleware": {
+      "0": null
+    }
+  }
+}
