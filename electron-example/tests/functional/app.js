@@ -1,14 +1,17 @@
-const assert = intern.getPlugin('chai.assert');
-const { registerSuite } = intern.getPlugin('interface.object');
+var { assert } = intern.getPlugin('chai');
+const { registerSuite } = intern.getInterface('object');
 
 registerSuite('Application', {
-	beforeEach() {
-		return this.remote.refresh();
+	afterEach() {
+		return this.remote
+			.refresh()
+			.sleep(1000);
 	},
 
 	tests: {
 		initialized() {
-			return this.remote.getPageTitle()
+			return this.remote
+				.getPageTitle()
 				.then(title => assert.equal(title, 'Redux TodoMVC Example'));
 		},
 
@@ -16,10 +19,9 @@ registerSuite('Application', {
 			return this.remote
 				.setFindTimeout(5000)
 				.findByCssSelector('input.new-todo')
-				.click()
-				.pressKeys('Task 1\n')
-				.pressKeys('Task 2\n')
-				.pressKeys('Task 3')
+				.type('Task 1\n')
+				.type('Task 2\n')
+				.type('Task 3')
 				.getSpecAttribute('value')
 				.then(val => assert.include(val, 'Task 3'));
 		}

@@ -1,8 +1,8 @@
 import * as actions from '../../../src/actions/index';
 import * as types from '../../../src/constants/ActionTypes'
 
-const { describe, it } = intern.getPlugin('interface.bdd');
-const expect = intern.getPlugin('chai.expect');
+const { describe, it } = intern.getInterface('bdd');
+const { expect } = intern.getPlugin('chai');
 
 describe('todo actions', () => {
 	it('addTodo should create ADD_TODO action', () => {

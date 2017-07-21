@@ -12,6 +12,15 @@
       "args": ["app={pwd}/build/bootstrap.js"] 
     }
   },
+  "tunnelOptions": {
+      "version": "3.4.0",
+      "drivers": [
+          {
+              "name": "chrome",
+              "version": "2.24"
+          }
+      ]
+  },
   "filterErrorStack": true,
   "configs": {
       "spectron": {

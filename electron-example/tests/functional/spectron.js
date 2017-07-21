@@ -1,8 +1,8 @@
 // A simple test to verify a visible window is opened with a title
 import { Application } from 'spectron';
 
-const assert = intern.getPlugin('chai.assert');
-const { registerSuite } = intern.getPlugin('interface.object');
+const { assert } = intern.getPlugin('chai');
+const { registerSuite } = intern.getInterface('object');
 
 let app;
 
