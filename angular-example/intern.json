@@ -1,0 +1,28 @@
+{
+  "environments": "chrome",
+  "functionalSuites": "dist/tests/functional/Todo.js",
+  "browser": {
+    "loader": {
+      "script": "systemjs"
+    },
+    "plugins": [
+      {
+        "script": "dist/tests/intern-angular-shim.js",
+        "options": {
+          "appConfig": "dist/systemjs.config.js",
+          "testConfig": "dist/tests/systemjs.config.js",
+          "require": [
+            "node_modules/core-js/client/shim.js",
+            "node_modules/zone.js/dist/zone.js",
+            "node_modules/zone.js/dist/long-stack-trace-zone.js"
+          ]
+        }
+      }
+    ],
+    "suites": [
+      "dist/tests/services/store.js",
+      "dist/tests/app.js"
+    ]
+  },
+  "excludeInstrumentation": "(?:node_modules|browser|tests)\\/|dist\\/[^\\/]+\\.js"
+}

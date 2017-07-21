@@ -11,16 +11,18 @@
         "./app/*"
       ]
     },
+    "importHelpers": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": true,
-	"lib": [
-	  "es5",
-	  "es2015.symbol.wellknown",
-	  "es2015.collection",
-	  "dom"
-	],
+    "lib": [
+      "es5",
+      "es2015.core",
+      "es2015.symbol.wellknown",
+      "es2015.collection",
+      "dom"
+    ],
     "types": [
       "intern",
       "systemjs"
