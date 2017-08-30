@@ -1,8 +1,10 @@
 # intern-examples
 
-<!-- start-github-only -->
-![](https://api.travis-ci.org/theintern/intern-examples.svg?branch=master)
+[![Intern](http://theintern.github.io/images/intern-v3.svg)](https://github.com/theintern/intern/tree/3.4/)
+[![Intern](http://theintern.github.io/images/intern-v4.svg)](https://github.com/theintern/intern/tree/master/) <!-- start-github-only -->
+![](https://api.travis-ci.org/theintern/intern-examples.svg?branch=master) <!-- end-github-only -->
 
+<!-- start-github-only -->
 <br><p align="center"><img src="https://cdn.rawgit.com/theintern/intern/master/docs/logo.svg" alt="Intern logo" height="128"></p><br>
 
 [Intern](https://github.com/theintern/intern) is a complete test system for JavaScript designed to help you write and run consistent, high-quality test cases for your JavaScript libraries and applications. It can be used to test _any_ JavaScript code.
