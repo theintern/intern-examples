@@ -1,10 +1,12 @@
 # intern-examples
 
+<!-- start-github-only -->
 ![](https://api.travis-ci.org/theintern/intern-examples.svg?branch=master)
 
 <br><p align="center"><img src="https://cdn.rawgit.com/theintern/intern/master/docs/logo.svg" alt="Intern logo" height="128"></p><br>
 
 [Intern](https://github.com/theintern/intern) is a complete test system for JavaScript designed to help you write and run consistent, high-quality test cases for your JavaScript libraries and applications. It can be used to test _any_ JavaScript code.
+<!-- end-github-only -->
 
 This repository is a collection of examples of using Intern in web applications. Use these examples as your guide to integrate Intern into your projects! Every example has a README that will guide you through the process of setting it up.
 
@@ -40,4 +42,6 @@ Each of the examples can be switched from running tests locally to using a cloud
 
 We welcome contributions of new examples, or improvements/updates to existing examples. Just fork this repo, add your example to a new branch, and make a PR. Note that like most open source projects, we require everyone to sign a [contributor license agreement](https://js.foundation/CLA/) when making non-trivial PRs.
 
+<!-- start-github-only -->
 © [SitePen, Inc.](http://sitepen.com) and its [contributors](https://github.com/theintern/intern/graphs/contributors)
+<!-- end-github-only -->
