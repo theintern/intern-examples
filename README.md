@@ -1,7 +1,7 @@
 # intern-examples
 
-[![Intern](http://theintern.github.io/images/intern-v3.svg)](https://github.com/theintern/intern/tree/3.4/)
-[![Intern](http://theintern.github.io/images/intern-v4.svg)](https://github.com/theintern/intern/tree/master/) <!-- start-github-only -->
+[![Intern](https://theintern.io/images/intern-v3.svg)](https://github.com/theintern/intern/tree/3.4/)
+[![Intern](https://theintern.io/images/intern-v4.svg)](https://github.com/theintern/intern/tree/master/) <!-- start-github-only -->
 ![](https://api.travis-ci.org/theintern/intern-examples.svg?branch=master) <!-- end-github-only -->
 
 <!-- start-github-only -->
