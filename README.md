@@ -1,6 +1,6 @@
 # Intern Examples
 
-[![Intern](http://theintern.github.io/images/intern-v3.svg)](https://github.com/theintern/intern/tree/3.4/)
+[![Intern](https://theintern.io/images/intern-v3.svg)](https://github.com/theintern/intern/tree/3.4/)
 
 This repository is a collection of examples of using [Intern](https://github.com/theintern/intern) in web applications.
 Use these examples as your guide to integrate [Intern](https://github.com/theintern/intern) into your projects!
