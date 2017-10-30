@@ -1,5 +1,4 @@
 {
     "environments": { "browserName": "chrome", "fixSessionCapabilities": "no-detect" },
-    "browser": { "suites": "tests/tests.js" },
-    "coverage": [ "src/**/*.js" ]
+    "browser": { "suites": "tests/tests.js" }
 }

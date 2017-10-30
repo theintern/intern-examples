@@ -5,7 +5,8 @@
   "description": "An example testing a Webpacked app with Intern",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "intern",
+    "start": "intern serveOnly"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +14,8 @@
     "@theintern/istanbul-loader": "~1.0.0-beta.1",
     "backbone": "~1.3.3",
     "backbone.localstorage": "~2.0.2",
-    "intern": "file:../../intern/intern-4.0.0-pre.tgz",
+    "intern": "~4.0.0",
+    "istanbul-lib-source-maps": "~1.2.1",
     "jquery": "~3.2.1",
     "todomvc-common": "~0.1.11",
     "ts-loader": "~2.3.7",
