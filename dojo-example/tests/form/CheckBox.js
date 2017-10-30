@@ -3,12 +3,10 @@ define([
 	'todo/form/CheckBox'
 ], function (require, CheckBox) {
 	var registerSuite = intern.getInterface('object').registerSuite;
-	var assert = intern.getAssertions('assert');
+	var assert = intern.getPlugin('chai').assert;
 	var checkbox;
 
-	registerSuite({
-		name: 'CheckBox',
-
+	registerSuite('CheckBox', {
 		setup: function () {
 			checkbox = new CheckBox();
 		},

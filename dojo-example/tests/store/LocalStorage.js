@@ -3,12 +3,10 @@ define([
 	'todo/store/LocalStorage'
 ], function (require, LocalStorage) {
 	var registerSuite = intern.getInterface('object').registerSuite;
-	var assert = intern.getAssertions('assert');
+	var assert = intern.getPlugin('chai').assert;
 	var store;
 
-	registerSuite({
-		name: 'LocalStorage Store',
-
+	registerSuite('LocalStorage Store', {
 		setup: function () {
 			store = new LocalStorage({
 				data: [
