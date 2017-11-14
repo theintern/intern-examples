@@ -7,7 +7,7 @@ define([
 	var checkbox;
 
 	registerSuite('CheckBox', {
-		setup: function () {
+		before: function () {
 			checkbox = new CheckBox();
 		},
 

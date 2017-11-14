@@ -13,5 +13,23 @@
   "functionalSuites": "tests/functional/Todo",
   "filterErrorStack": false,
   "suites": "tests/all",
-  "environments": "chrome"
+  "environments": [ "chrome", "node" ],
+  "configs": {
+    "ie": {
+      "environments": {
+          "browserName": "internet explorer",
+          "requireWindowFocus": true
+      },
+      "tunnelOptions": {
+        "version": "3.4.0",
+        "drivers": [{ "name": "ie", "version": "3.4.0" }]
+      }
+    },
+    "firefox": {
+      "environments": "firefox",
+      "tunnelOptions": {
+        "drivers": [{ "name": "firefox" }]
+      }
+    }
+  }
 }

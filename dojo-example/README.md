@@ -14,10 +14,13 @@ It is based on the [TodoMVC Dojo Example](http://todomvc.com/examples/dojo/).
 
 ## Running tests
 
-**Unit tests in Node**
+**Run unit and functional tests in Chrome**
 
     $ npm test
 
-**WebDriver tests**
+**Run unit and functional tests in other browsers**
 
-    $ npm test webdriver
+    $ npm test config=@firefox
+    $ npm test config=@ie
+
+Note that the above commands all require that the browser be available on the test system.

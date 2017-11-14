@@ -7,7 +7,7 @@ define([
 	var store;
 
 	registerSuite('LocalStorage Store', {
-		setup: function () {
+		before: function () {
 			store = new LocalStorage({
 				data: [
 					{id: 1, name: 'one', prime: false},
