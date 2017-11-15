@@ -30,6 +30,12 @@
       "tunnelOptions": {
         "drivers": [{ "name": "firefox" }]
       }
+    },
+    "edge": {
+      "environments": "MicrosoftEdge",
+      "tunnelOptions": {
+        "drivers": [{ "name": "edge" }]
+      }
     }
   }
 }
