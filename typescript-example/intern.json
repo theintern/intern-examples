@@ -1,0 +1,10 @@
+{
+    "environments": "chrome",
+    "suites": "tests/unit/**/*.js",
+    "functionalSuites": "tests/functional/**/*.js",
+    "coverage": "src/**/*.js",
+    "browser": {
+        "loader": "systemjs",
+        "plugins": { "script": "src/config.js", "useLoader": true }
+    }
+}

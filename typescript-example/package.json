@@ -1,0 +1,30 @@
+{
+  "name": "typescript-example",
+  "private": true,
+  "version": "1.0.0",
+  "description": "An example testing a simple TypeScript app with Intern",
+  "scripts": {
+    "test": "intern",
+    "start": "intern serveOnly",
+    "build": "tsc && tsc -p tests",
+    "clean": "del 'src/**/*.js' 'tests/**/*.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/backbone": "~1.3.40",
+    "@types/backbone.localstorage": "~1.0.31",
+    "@types/jquery": "~3.2.16",
+    "@types/systemjs": "~0.20.6",
+    "backbone": "~1.3.3",
+    "backbone.localstorage": "~2.0.2",
+    "del-cli": "~1.1.0",
+    "intern": "~4.1.1",
+    "jquery": "~3.2.1",
+    "systemjs": "~0.20.19",
+    "todomvc-app-css": "~2.1.0",
+    "todomvc-common": "~1.0.4",
+    "typescript": "~2.5.2",
+    "underscore": "~1.8.3"
+  }
+}
