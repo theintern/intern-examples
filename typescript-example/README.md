@@ -28,3 +28,12 @@ This example uses Intern to test a jQuery + Backbone TodoMVC app written in Type
     ```
     npm test
     ```
+
+The `npm test` command will run tests in Chrome by default. The test config in this project contains convenience configurations for other browsers as well.
+
+```
+npm test config=@edge
+npm test config=@firefox
+npm test config=@ie
+npm test config=@safari
+```

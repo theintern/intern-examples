@@ -1,12 +1,24 @@
 {
+    // Test in Chrome by default.
     "environments": "chrome",
+
+    // Resource properties such as 'suites' must point to the built files
+    // rather than the TypeScript sources.
     "suites": "tests/unit/**/*.js",
     "functionalSuites": "tests/functional/**/*.js",
     "coverage": "src/**/*.js",
+
     "browser": {
+        // SystemJS is needed to load the application modules in the browser
         "loader": "systemjs",
+
+        // The application's SystemJS config is loaded here as it's necessary
+        // when loading individual application modules. The 'useLoader' flag
+        // indicates that the file should be loaded using the SystemJS loader.
         "plugins": { "script": "src/config.js", "useLoader": true }
     },
+
+    // Convenience configs for using various browsers
     "configs": {
         "firefox": {
             "environments": "firefox",
@@ -29,6 +41,8 @@
         "safari": {
             "environments": {
                 "browser": "safari",
+                // This disables Intern's browser feature detection, which can
+                // make Safari 11 unresponsive.
                 "fixSessionCapabilities": "no-detect"
             }
         }
