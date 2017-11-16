@@ -1,9 +1,34 @@
 {
-  "capabilities": { "fixSessionCapabilities": "no-detect" },
-  "environments": "chrome",
-  "functionalSuites": "tests/functional/**/*.js",
-  "require": "js/utils.js",
-  "browser": {
-      "suites": "tests/utils.js"
-  }
+    "environments": "chrome",
+    "functionalSuites": "tests/functional/**/*.js",
+    "browser": {
+        "plugins": "js/utils.js",
+        "suites": "tests/utils.js"
+    },
+    "configs": {
+        "firefox": {
+            "environments": "firefox",
+            "tunnelOptions": {
+                "drivers": ["firefox"]
+            }
+        },
+        "ie": {
+            "environments": "internet explorer",
+            "tunnelOptions": {
+                "drivers": ["ie"]
+            }
+        },
+        "edge": {
+            "environments": "MicrosoftEdge",
+            "tunnelOptions": {
+                "drivers": ["edge"]
+            }
+        },
+        "safari": {
+            "environments": {
+                "browser": "safari",
+                "fixSessionCapabilities": "no-detect"
+            }
+        }
+    }
 }

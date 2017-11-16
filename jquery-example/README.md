@@ -14,13 +14,8 @@ This example is based on the [TodoMVC jQuery Example](http://todomvc.com/example
 
 ## Running tests
 
-**Unit tests in Node**
+To run the unit and functional tests in Chrome:
 
-    $ npm test
-
-Note that this command won’t actually run any tests since the only unit test suites in the test config are in
-`browserSuites` (meaning that Intern will only try to run them in a Browser).
-
-**WebDriver tests**
-
-    $ npm test webdriver
+```
+$ npm test
+```

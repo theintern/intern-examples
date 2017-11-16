@@ -1,4 +1,4 @@
-var Utils = {
+window.Utils = {
 	uuid: function () {
 		/*jshint bitwise:false */
 		var i, random;
