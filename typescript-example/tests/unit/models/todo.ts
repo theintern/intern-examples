@@ -1,29 +1,14 @@
 import Todo from 'src/models/todo';
-import * as jQuery from 'jquery';
 
 const { registerSuite } = intern.getInterface('object');
 const { assert } = intern.getPlugin('chai');
 
 let todo;
-let ajax;
-
-class Model extends Todo {
-	urlRoot = 'mockUrlRoot';
-}
 
 registerSuite('todo model', {
-	before() {
-		// Mock the jquery ajax method for now
-		ajax = jQuery.ajax;
-		(<any>jQuery).ajax = <any>(function () {});
-	},
-
-	after() {
-		(<any>jQuery).ajax = ajax;
-	},
-
 	beforeEach() {
-		todo = new Model();
+		todo = new Todo();
+		todo.sync = () => Promise.resolve({});
 	},
 
 	tests: {
