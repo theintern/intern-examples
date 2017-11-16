@@ -18,6 +18,7 @@ This repository is a collection of examples of using Intern in web applications.
 * [Electron](./electron-example)
 * [jQuery](./jquery-example)
 * [React with Enzyme](./react-enzyme-example)
+* [TypeScript](./typescript-example)
 * [Grunt](./grunt-example)
 
 ## Intern 3 Examples
@@ -31,9 +32,8 @@ Each of the examples can be switched from running tests locally to using a cloud
 
 ## External Examples
 
-* [Intern example configuration](https://github.com/theintern/intern/blob/master/tests/example.intern.js)
-* [Intern self-testing example](https://github.com/theintern/intern/blob/master/tests/selftest.intern.js)
-* [Functional test demo from dojo2-core](https://github.com/csnover/dojo2-core/tree/master/test/functional)
+Intern 4 hasn’t been out for very long yet, so most of these are still based on Intern 3.
+
 * [Cassowary JS](https://github.com/slightlyoff/cassowary.js/)
 * [jQuery PEP](https://github.com/jquery/PEP/tree/master/tests)
 * [Official Intern Tutorial](https://github.com/theintern/intern-tutorial)
