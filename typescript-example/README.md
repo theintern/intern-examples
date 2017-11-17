@@ -1,4 +1,4 @@
-# webpack-example
+# typescript-example
 
 This example uses Intern to test a jQuery + Backbone TodoMVC app written in TypeScript.
 
