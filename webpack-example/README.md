@@ -8,16 +8,19 @@ This example uses webpack to create a test bundle for a simple jQuery + Backbone
    This demo runs with local Selenium, which Intern will automatically install.
 
 2. Install intern command line interface (optional)
-
    ```
    npm install -g @theintern/cli
    ```
 
 3. Install node modules and intern
+   ```
+   npm install
+   ```
 
-    ```
-    npm install
-    ```
+4. Build the test bundle
+   ```
+   npm run build
+   ```
 
 ## Running tests
 
