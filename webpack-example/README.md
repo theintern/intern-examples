@@ -24,14 +24,6 @@ This example uses webpack to create a test bundle for a simple jQuery + Backbone
 
 ## Running tests
 
-* **Run Webpack**
-
-   To ensure we have built files on which to run our tests, webpack must be run:
-
-   ```
-   webpack
-   ```
-
 * **Local browser tests**
 
     ```
@@ -45,3 +37,5 @@ This example uses webpack to create a test bundle for a simple jQuery + Backbone
     ```
     npm test
     ```
+
+Remember to run `npm run build` again if any changes are made to the test or application code.
