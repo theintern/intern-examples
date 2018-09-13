@@ -1,15 +1,16 @@
-electron-example
-================
+# electron-example
 
 This example is based on the [React Redux example](https://github.com/reactjs/redux/tree/master/examples/todomvc),
 running in Electron. It contains two sets of functional tests, one that uses Intern’s built-in WebDriver library, and
-one that uses Spectron.
+one that uses Spectron. It also contains unit tests, but these are run in Node rather than Electron as Intern 4.x does
+not currently support running unit tests in Electron.
 
-## Setup 
+## Setup
 
 1. Install the JRE or JDK. This demo uses Selenium, which requires Java, to run WebDriver tests.
-   
+
 2. Install node modules
+
    ```
    $ npm install
    ```
@@ -19,17 +20,16 @@ one that uses Spectron.
    $ npm run build
    ```
 
-
 ## Running Tests
 
-**Unit tests in Node**
+**Unit tests (in Node) and functional tests**
 
     $ npm test
 
-**WebDriver tests**
+On Windows, run
 
-	$ npm test webdriver
+    $ npm test config=@windows
 
 **WebDriver tests using Spectron**
 
-	$ npm test config=intern-spectron.json
+    $ npm test config=intern-spectron.json

@@ -4,31 +4,48 @@
     "suites": "tests/unit/**/*.js",
     "plugins": ["tests/build_check.js", "tests/pre.js"]
   },
-  "environments": {
-    "browserName": "chrome",
-    "fixSessionCapabilities": false,
-    "chromeOptions": {
-      "binary": "{pwd}/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron",
-      "args": ["app={pwd}/build/bootstrap.js"] 
+  "environments": [
+    "node",
+    {
+      "browserName": "chrome",
+      "fixSessionCapabilities": false,
+      "chromeOptions": {
+        "binary": "{pwd}/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron",
+        "args": ["app={pwd}/build/bootstrap.js"]
+      }
     }
-  },
+  ],
   "tunnelOptions": {
-      "version": "3.4.0",
-      "drivers": [
-          {
-              "name": "chrome",
-              "version": "2.24"
-          }
-      ]
+    "version": "3.4.0",
+    "drivers": [
+      {
+        "name": "chrome",
+        "version": "2.24"
+      }
+    ]
   },
   "filterErrorStack": true,
   "configs": {
-      "spectron": {
-          "suites": "tests/functional/spectron.js",
-          "environments": [],
-          "node": {
-              "suites": []
-          }
+    "spectron": {
+      "suites": "tests/functional/spectron.js",
+      "environments": [],
+      "node": {
+        "suites": []
       }
+    },
+
+    "windows": {
+      "environments": [
+        "node",
+        {
+          "browserName": "chrome",
+          "fixSessionCapabilities": false,
+          "chromeOptions": {
+            "binary": "{pwd}/node_modules/electron/dist/electron.exe",
+            "args": ["app={pwd}/build/bootstrap.js"]
+          }
+        }
+      ]
+    }
   }
 }

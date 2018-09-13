@@ -3,6 +3,7 @@
   "name": "electron-example",
   "version": "0.1.0",
   "description": "An example showing how to use Intern to test an Electron app",
+  "homepage": "./",
   "dependencies": {
     "babel-core": "~6.23.0",
     "babel-plugin-transform-class-properties": "~6.23.0",
@@ -19,20 +20,18 @@
   },
   "devDependencies": {
     "enzyme": "~2.8.0",
-    "intern": "~4.0.0-alpha.10",
+    "intern": "~4.3.0",
     "react-addons-test-utils": "~15.5.0",
     "react-scripts": "~0.9.3",
     "react-test-renderer": "~15.5.0",
     "serve": "~5.1.1",
+    "shx": "~0.3.2",
     "spectron": "~3.7.2"
   },
-  "peerDependencies": {
-    "jquery": "latest"
-  },
   "scripts": {
-    "build": "react-scripts build && cp src/main.js build && cp src/bootstrap.js build",
+    "build": "react-scripts build && shx cp src/main.js build && shx cp src/bootstrap.js build",
     "start": "cd build && electron bootstrap.js",
-    "clean": "rm -rf build",
+    "clean": "shx rm -rf build",
     "test": "intern"
   }
 }
