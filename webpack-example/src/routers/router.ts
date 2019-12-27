@@ -1,5 +1,8 @@
+/*global Backbone */
+var app = window.app = window.app || {};
+
 (function () {
-	const app = (<any>window).app = (<any>window).app || {};
+	'use strict';
 
 	// Todo Router
 	// ----------

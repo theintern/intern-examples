@@ -3,7 +3,6 @@
   "private": true,
   "version": "1.0.0",
   "description": "An example testing a Webpacked app with Intern",
-  "main": "index.js",
   "scripts": {
     "build": "webpack",
     "test": "intern",
@@ -12,19 +11,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@theintern/istanbul-loader": "~1.0.0-beta.1",
-    "backbone": "~1.3.3",
+    "@theintern/istanbul-loader": "~1.0.0-beta.2",
+    "backbone": "~1.4.0",
     "backbone.localstorage": "~2.0.2",
-    "intern": "~4.1.2",
-    "istanbul-lib-source-maps": "~1.2.1",
-    "jquery": "~3.2.1",
-    "todomvc-common": "~0.1.11",
-    "ts-loader": "~2.3.7",
-    "ts-node": "~3.3.0",
-    "typescript": "~2.5.2",
-    "umd-compat-loader": "~2.0.1",
-    "underscore": "~1.8.3",
-    "webpack": "~2.6.1",
-    "webpack-dev-server": "~2.5.1"
+    "intern": "~4.7.1",
+    "istanbul-lib-source-maps": "~4.0.0",
+    "jquery": "~3.4.1",
+    "todomvc-app-css": "^2.3.0",
+    "todomvc-common": "~1.0.5",
+    "ts-loader": "~6.2.1",
+    "ts-node": "~8.5.4",
+    "typescript": "~3.7.4",
+    "umd-compat-loader": "~2.1.2",
+    "underscore": "~1.9.1",
+    "webpack": "~4.41.4",
+    "webpack-cli": "~3.3.10",
+    "webpack-dev-server": "~3.10.1"
   }
 }

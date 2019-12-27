@@ -1,12 +1,11 @@
 import { ProvidePlugin } from 'webpack';
-import { join } from 'path';
+import { resolve } from 'path';
 
 module.exports = {
+	mode: 'development',
 	entry: {
+		app: './src/app.js',
 		tests: './tests/intern.js'
-	},
-	output: {
-		filename: join('tests', 'tests.js')
 	},
 	devtool: 'inline-source-map',
 	module: {
