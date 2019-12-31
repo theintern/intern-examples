@@ -7,21 +7,21 @@ export default class TodoRouter extends Router {
 	filter: string;
 	todos: Todos;
 
+	static routes = {
+		'*filter': 'setFilter'
+	}
+
 	constructor(options: TodoRouterOptions) {
-		super(<RouterOptions>options);
+		super({...options, routes: TodoRouter.routes });
 		this.todos = options.todos;
 		if (options.disableHistory !== false) {
 			history.start();
 		}
 	}
 
-	routes: {
-		'*filter': 'setFilter'
-	}
-
-	setFilter(param) {
+	setFilter(param = '') {
 		// Set the current filter to be used
-		this.filter = param || '';
+		this.filter = param;
 
 		// Trigger a collection filter event, causing hiding/unhiding
 		// of Todo view items

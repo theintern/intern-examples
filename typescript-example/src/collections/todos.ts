@@ -19,7 +19,7 @@ export default class Todos extends Collection<Todo> {
 
 	// Filter down the list of all todo items that are finished.
 	completed() {
-		return this.filter(todo => todo.get('completed'));
+		return this.where({completed: true});
 	}
 
 	// Save all of the todo items under the `"todos"` namespace.
@@ -29,7 +29,7 @@ export default class Todos extends Collection<Todo> {
 
 	// Filter down the list to only todo items that are still not finished.
 	remaining() {
-		return this.without(...this.completed());
+		return this.where({completed: false});
 	}
 
 	// We keep the Todos in sequential order, despite being saved by unordered
