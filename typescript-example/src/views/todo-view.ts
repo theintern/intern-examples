@@ -12,7 +12,7 @@ export default class TodoView extends View<Todo> {
 	// Cache the template function for a single item.
 	template: (...args: any[]) => string;
 
-	$input: JQuery<HTMLElement>;
+	$input: JQuery<HTMLInputElement>;
 	router: Router;
 
 	constructor(options: TodoViewOptions) {
@@ -36,6 +36,7 @@ export default class TodoView extends View<Todo> {
 			'dblclick label': 'edit',
 			'click .destroy': 'clear',
 			'keypress .edit': 'updateOnEnter',
+			'keydown .edit': 'revertOnEscape',
 			'blur .edit': 'close'
 		}
 	}
@@ -45,7 +46,7 @@ export default class TodoView extends View<Todo> {
 		this.$el.html(this.template(this.model.toJSON()));
 		this.$el.toggleClass('completed', this.model.get('completed'));
 		this.toggleVisible();
-		this.$input = $('.edit');
+		this.$input = <JQuery<HTMLInputElement>> this.$('.edit');
 		return this;
 	}
 
@@ -54,12 +55,10 @@ export default class TodoView extends View<Todo> {
 	}
 
 	isHidden() {
-		var isCompleted = this.model.get('completed');
 		const filter = this.router.filter;
-		return (// hidden cases only
-			(!isCompleted && filter === 'completed') ||
-			(isCompleted && filter === 'active')
-		);
+		return this.model.get('completed') ?
+			filter === 'active' :
+			filter === 'completed';
 	}
 
 	// Toggle the `"completed"` state of the model.
@@ -69,14 +68,24 @@ export default class TodoView extends View<Todo> {
 
 	// Switch this view into `"editing"` mode, displaying the input field.
 	edit() {
+		var textLength = (<string> this.$input.val()).length;
 		this.$el.addClass('editing');
 		this.$input.focus();
+		this.$input[0].setSelectionRange(textLength, textLength);
 	}
 
 	// Close the `"editing"` mode, saving changes to the todo.
 	close() {
 		const trimmedValue = (<string>this.$input.val()).trim();
 		this.$input.val(trimmedValue);
+
+		// We don't want to handle blur events from an item that is no
+		// longer being edited. Relying on the CSS class here has the
+		// benefit of us not having to maintain state in the DOM and the
+		// JavaScript logic.
+		if (!this.$el.hasClass('editing')) {
+			return;
+		}
 
 		if (trimmedValue) {
 			this.model.save({ title: trimmedValue });
@@ -91,6 +100,16 @@ export default class TodoView extends View<Todo> {
 	updateOnEnter(e) {
 		if (e.which === 13) {
 			this.close();
+		}
+	}
+
+	// If you're pressing `escape` we revert your change by simply leaving
+	// the `editing` state.
+	revertOnEscape(e) {
+		if (e.which === 27) {
+			this.$el.removeClass('editing');
+			// Also reset the hidden input back to the original value.
+			this.$input.val(this.model.get('title'));
 		}
 	}
 

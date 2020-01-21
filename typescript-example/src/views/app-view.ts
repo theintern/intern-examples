@@ -1,6 +1,6 @@
 import { View, ViewOptions } from 'backbone';
 import * as JQuery from 'jquery';
-import { invoke, template } from 'underscore';
+import { invoke, template, debounce } from 'underscore';
 
 import Router from '../routers/router';
 import Todos from '../collections/todos';
@@ -15,6 +15,7 @@ export default class AppView extends View<any> {
 	$input: JQuery<HTMLElement>;
 	$footer: JQuery<HTMLElement>;
 	$main: JQuery<HTMLElement>;
+	$list: JQuery<HTMLElement>;
 
 	router: Router;
 	todos: Todos;
@@ -32,6 +33,8 @@ export default class AppView extends View<any> {
 		this.$input = $('.new-todo');
 		this.$footer = $('.footer');
 		this.$main = $('.main');
+		this.$list = $('.todo-list');
+
 		this.statsTemplate = template($('.stats-template').html());
 
 		// At initialization we bind to the relevant events on the `Todos`
@@ -42,7 +45,7 @@ export default class AppView extends View<any> {
 		this.listenTo(todos, 'reset', this.addAll);
 		this.listenTo(todos, 'change:completed', this.filterOne);
 		this.listenTo(todos, 'filter', this.filterAll);
-		this.listenTo(todos, 'all', this.render);
+		this.listenTo(todos, 'all', debounce(this.render, 0));
 
 		todos.fetch();
 	}
@@ -89,12 +92,12 @@ export default class AppView extends View<any> {
 	// appending its element to the `<ul>`.
 	addOne(todo) {
 		const view = new TodoView({ model: todo, router: this.router });
-		$('.todo-list').append(view.render().el);
+		this.$list.append(view.render().el);
 	}
 
 	// Add all items in the **Todos** collection at once.
 	addAll() {
-		this.$('.todo-list').html('');
+		this.$list.html('');
 		this.todos.each(this.addOne, this);
 	}
 
@@ -128,7 +131,6 @@ export default class AppView extends View<any> {
 
 	// Clear all completed todo items, destroying their models.
 	clearCompleted() {
-		console.log('clearing');
 		invoke(this.todos.completed(), 'destroy');
 		return false;
 	}
