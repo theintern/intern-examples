@@ -32,4 +32,4 @@ On Windows, run
 
 **WebDriver tests using Spectron**
 
-    $ npm test config=intern-spectron.json
+    $ npm test config=@spectron

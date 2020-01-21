@@ -1,5 +1,6 @@
 // A simple test to verify a visible window is opened with a title
 import { Application } from 'spectron';
+import electronPath from 'electron';
 
 const { assert } = intern.getPlugin('chai');
 const { registerSuite } = intern.getInterface('object');
@@ -9,7 +10,7 @@ let app;
 registerSuite('Application', {
 	beforeEach() {
 		app = new Application({
-			path: 'node_modules/electron/dist/Electron.app/Contents/MacOS/Electron',
+			path: electronPath,
 			args: ['build/bootstrap.js']
 		});
 		return app.start();
