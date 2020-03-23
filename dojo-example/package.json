@@ -9,7 +9,7 @@
   "dependencies": {
     "dijit": "~1.12.0",
     "dojo": "~1.12.0",
-    "dojox": "~1.14.5",
+    "dojox": "~1.14.6",
     "todomvc-common": "~0.1.6"
   },
   "scripts": {
