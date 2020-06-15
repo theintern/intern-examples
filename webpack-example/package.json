@@ -16,7 +16,7 @@
     "backbone.localstorage": "~2.0.2",
     "intern": "~4.7.1",
     "istanbul-lib-source-maps": "~4.0.0",
-    "jquery": "~3.4.1",
+    "jquery": "~3.5.0",
     "todomvc-app-css": "^2.3.0",
     "todomvc-common": "~1.0.5",
     "ts-loader": "~6.2.1",
