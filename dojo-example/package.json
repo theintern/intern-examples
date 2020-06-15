@@ -7,7 +7,7 @@
     "intern": "~4.1.0"
   },
   "dependencies": {
-    "dijit": "~1.12.0",
+    "dijit": "~1.12.9",
     "dojo": "~1.12.8",
     "dojox": "~1.14.6",
     "todomvc-common": "~0.1.6"
