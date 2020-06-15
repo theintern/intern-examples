@@ -9,7 +9,7 @@
     "backbone": "~1.0.0",
     "backbone.localstorage": "~1.1.0",
     "underscore": "~1.4.4",
-    "jquery": "~1.12.1",
+    "jquery": "~3.5.1",
     "todomvc-common": "~0.1.4"
   },
   "scripts": {
