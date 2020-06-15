@@ -7,7 +7,7 @@
   "dependencies": {
     "handlebars": "~4.3.0",
     "intern": "~4.1.2",
-    "jquery": "~1.12.1",
+    "jquery": "~3.5.0",
     "todomvc-common": "~0.1.4"
   },
   "scripts": {
