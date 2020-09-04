@@ -5,7 +5,7 @@
   "description": "An example showing a typical jQuery application tested with Intern",
   "devDependencies": {},
   "dependencies": {
-    "handlebars": "~4.3.0",
+    "handlebars": "~4.4.5",
     "intern": "~4.1.2",
     "jquery": "~3.5.0",
     "todomvc-common": "~0.1.4"
