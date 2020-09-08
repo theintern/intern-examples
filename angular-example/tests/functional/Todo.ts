@@ -1,5 +1,6 @@
 const { describe, before, it } = intern.getInterface('bdd');
 const { expect } = intern.getPlugin('chai');
+import keys from '@theintern/leadfoot/keys';
 
 describe('functional/Todo', () => {
 	before(async ({ remote }) => {
@@ -12,12 +13,12 @@ describe('functional/Todo', () => {
 
 		const input = remote.findByCssSelector('input.new-todo');
 		await input.click();
-		await input.pressKeys('Task 1');
-		await input.pressKeys('\n');
-		await input.pressKeys('Task 2');
-		await input.pressKeys('\n');
-		await input.pressKeys('Task 3');
-		await input.pressKeys('\n');
+		await input.type('Task 1');
+		await input.type(keys.ENTER);
+		await input.type('Task 2');
+		await input.type(keys.ENTER);
+		await input.type('Task 3');
+		await input.type(keys.ENTER);
 
 		const todos = await remote.findAllByCssSelector('.todo-list > li');
 		expect(todos).to.have.lengthOf(3);

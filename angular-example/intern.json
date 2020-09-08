@@ -8,6 +8,7 @@
     "plugins": [
       {
         "script": "dist/tests/intern-angular-shim.js",
+        "useLoader": true,
         "options": {
           "appConfig": "dist/systemjs.config.js",
           "testConfig": "dist/tests/systemjs.config.js",
