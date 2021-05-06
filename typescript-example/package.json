@@ -25,6 +25,6 @@
     "todomvc-app-css": "~2.3.0",
     "todomvc-common": "~1.0.5",
     "typescript": "~3.7.4",
-    "underscore": "~1.9.1"
+    "underscore": "~1.12.1"
   }
 }
