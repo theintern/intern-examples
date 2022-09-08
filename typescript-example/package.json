@@ -19,7 +19,7 @@
     "backbone": "~1.4.0",
     "backbone.localstorage": "~2.0.2",
     "del-cli": "~3.0.0",
-    "intern": "~4.7.1",
+    "intern": "~4.10.1",
     "jquery": "~3.5.0",
     "systemjs": "~0.20.19",
     "todomvc-app-css": "~2.3.0",
