@@ -21,7 +21,7 @@
     "@types/systemjs": "0.20.2",
     "concurrently": "~3.5.0",
     "cpx": "~1.5.0",
-    "intern": "^4.8.7",
+    "intern": "^4.10.1",
     "lite-server": "~2.3.0",
     "sinon": "~2.3.8",
     "typescript": "~4.0.2"
