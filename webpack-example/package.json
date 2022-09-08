@@ -14,7 +14,7 @@
     "@theintern/istanbul-loader": "~1.0.0-beta.2",
     "backbone": "~1.4.0",
     "backbone.localstorage": "~2.0.2",
-    "intern": "~4.7.1",
+    "intern": "~4.10.1",
     "istanbul-lib-source-maps": "~4.0.0",
     "jquery": "~3.5.0",
     "todomvc-app-css": "^2.3.0",
