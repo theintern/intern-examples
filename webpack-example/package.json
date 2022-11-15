@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@theintern/istanbul-loader": "~1.0.0-beta.2",
+    "@theintern/istanbul-loader": "~1.0.0-beta.3",
     "backbone": "~1.4.0",
     "backbone.localstorage": "~2.0.2",
     "intern": "~4.7.1",
@@ -25,7 +25,7 @@
     "umd-compat-loader": "~2.1.2",
     "underscore": "~1.9.1",
     "webpack": "~4.41.4",
-    "webpack-cli": "~3.3.10",
+    "webpack-cli": "~3.3.12",
     "webpack-dev-server": "~3.10.1"
   }
 }
