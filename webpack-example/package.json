@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@theintern/istanbul-loader": "~1.0.0-beta.2",
+    "@theintern/istanbul-loader": "~1.0.0-beta.3",
     "backbone": "~1.4.0",
     "backbone.localstorage": "~2.0.2",
     "intern": "~4.7.1",
