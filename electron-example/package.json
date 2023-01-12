@@ -22,9 +22,9 @@
     "enzyme": "~2.8.0",
     "intern": "~4.3.0",
     "react-addons-test-utils": "~15.5.0",
-    "react-scripts": "~0.9.3",
+    "react-scripts": "~5.0.1",
     "react-test-renderer": "~15.5.0",
-    "serve": "~5.1.1",
+    "serve": "~14.1.2",
     "shx": "~0.3.2",
     "spectron": "~3.7.2"
   },
